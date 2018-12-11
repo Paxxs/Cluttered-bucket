@@ -62,7 +62,7 @@ Scripts which will save you much time while debuging and writing manifests. If y
 1. Fork this repository
     1. Could be just downloaded as zip
         1. But you will lose track about upstream changes.
-1. Give your bucket in new inside github project settings.
+1. Give your bucket in new name inside github project settings.
 1. Add proper description of repository.
     - Information about what type of manifests could be found here.
 1. Add `scoop-bucket` tag for repository
@@ -87,5 +87,5 @@ Scripts which will save you much time while debuging and writing manifests. If y
     1. Replace all `%%templatestring%%` with real and according values.
         1. Replace appveyor status badge with yours
             1. See: <https://www.appveyor.com/docs/status-badges/>
-    1. Save edited file as `README.md`
+    1. Override this README with completed `README.template.md`
 1. 🎉🎉 Everything set. You are ready to write and share manifests. 🎉🎉
