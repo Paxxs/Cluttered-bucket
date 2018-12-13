@@ -246,12 +246,7 @@ Describe 'Changed manifests installation' {
 
 	$changedFiles = $changedFiles |
 		Where-Object { ($_ -notlike '*.vscode*') } |
-		Where-Object { ($_ -notlike '*TODO*') } |
-		Where-Object { ($_ -notlike '*KMS*') } |
-		Where-Object { ($_ -notlike '*E2B*') } |
-		Where-Object { ($_ -notlike '*TexLive*') } |
-		Where-Object { ($_ -notlike '*unlocker*') } |
-		Where-Object { ($_ -notlike '*Spotify*') }
+		Where-Object { ($_ -notlike '*TODO*') }
 
 	if ($changedFiles.Count -gt 0) {
 		scoop config lastupdate (([System.DateTime]::Now).ToString('o')) # Disable scoop auto update when installing manifests
