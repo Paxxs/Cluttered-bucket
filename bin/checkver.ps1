@@ -16,7 +16,7 @@
 .PARAMETER Recurse
 	Manifests in all subdirectories will be checked. (except .vscode and bin)
 .PARAMETER Rest
-	-ns - Show all (even up to date) manifests
+	-s - Skip manifest with latest version
 	-u - Update given manifests
 	-f - Force update given manifests
 		Usefull for hash updates
@@ -57,7 +57,6 @@ param(
 	[String[]] $Manifest = '*',
 	[ValidateScript( { if ( Test-Path $_ -Type Container) { $true } else { $false } })]
 	[String] $Dir = "$PSScriptRoot\..\bucket",
-	[Alias('ns')]
 	[Switch] $Recurse,
 	[Parameter(ValueFromRemainingArguments = $true)]
 	[String[]] $Rest = @()
