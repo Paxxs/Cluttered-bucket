@@ -6,12 +6,12 @@ In this repository you will find everything you need to know about creating cust
 
 ### `bucket` Folder
 
-- All manifests belong here.
-- `.gitkeep` file could be removed after you push your first manifest.
+- All manifests belong here
+- `.gitkeep` file could be removed after you push your first manifest
 
 ### `.vscode` Folder
 
-Contains all syntax highlighting, code formating, manifest creating tools you could use
+Contains all syntax highlighting, code formating, manifest creating tools you could use.
 
 - Extensions
     - All extensions which will save your time while writing manifests are in recommended sections
@@ -61,10 +61,10 @@ Scripts which will save you much time while debuging and writing manifests. If y
 
 1. Fork this repository
     1. Could be just downloaded as zip
-        1. But you will lose track about upstream changes.
-1. Give your bucket in new name inside github project settings.
-1. Add proper description of repository.
-    - Information about what type of manifests could be found here.
+        1. But you will lose track about upstream changes
+1. Give your bucket in new name inside github project settings
+1. Add proper description of repository
+    - Information about what type of manifests could be found here
 1. Add `scoop-bucket` tag for repository
 1. Enable appveyor CI/CD
     1. Register / Login to [Appveyor](https://ci.appveyor.com/login)
@@ -78,14 +78,15 @@ Scripts which will save you much time while debuging and writing manifests. If y
         1. Copy `Sample markdown code` snippet for further usage
 1. Clone project into some folder
 1. Open vscode with this clone
-1. Run `git remote add 'upstream' 'https://github.com/Scoopinstaller/DefaultBucker.git'`
+1. Run `git remote add 'upstream' 'https://github.com/Ash258/GenericBucket.git'`
 1. Run `.\bin\createHooks.ps1`
     - Tests will be executed before committing
         - It will reduce Appveyor CI fails
 1. Create proper README.md
     1. Open `README.template.md`
-    1. Replace all `%%templatestring%%` with real and according values.
+    1. Replace all `%%templatestring%%` with real and according values
         1. Replace appveyor status badge with yours
             1. See: <https://www.appveyor.com/docs/status-badges/>
     1. Override this README with completed `README.template.md`
+    1. Remove template `README.template.md`
 1. 🎉🎉 Everything set. You are ready to write and share manifests. 🎉🎉
