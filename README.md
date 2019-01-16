@@ -66,6 +66,7 @@ Scripts which will save you much time while debuging and writing manifests. If y
 1. Add proper description of repository
     - Information about what type of manifests could be found here
 1. Add `scoop-bucket` tag for repository
+    - Your manifests will be automatically available at <https://scoop.netlify.com/apps/> and <https://scoop.netlify.com/buckets/>
 1. Enable appveyor CI/CD
     1. Register / Login to [Appveyor](https://ci.appveyor.com/login)
     1. Click `New Project`
@@ -79,9 +80,15 @@ Scripts which will save you much time while debuging and writing manifests. If y
 1. Clone project into some folder
 1. Open vscode with this clone
 1. Run `git remote add 'upstream' 'https://github.com/Ash258/GenericBucket.git'`
+    - This step will allow you to synchronize changes with this template repository
+    - If some changes are pushed into this repository and you want to reflect them into your bucket, you can simply do something like:
+        - `git fetch --all`
+        - `git checkout -B upstream-master -t upstream/master`
+        - Do changes
+        - `git merge master` or create PR in github
 1. Run `.\bin\createHooks.ps1`
     - Tests will be executed before committing
-        - It will reduce Appveyor CI fails
+        - It will reduce Appveyor CI fails due to some small slip (like typo in property, wrong property type, etc)
 1. Create proper README.md
     1. Open `README.template.md`
     1. Replace all `%%templatestring%%` with real and according values
