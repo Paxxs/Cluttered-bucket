@@ -6,6 +6,7 @@ cache:
   - '%USERPROFILE%\Documents\WindowsPowerShell\Modules -> appveyor.yml'
 matrix:
   fast_finish: true
+build: 'off'
 image: Visual Studio 2017
 environment:
   SCOOP: C:\projects\scoop
