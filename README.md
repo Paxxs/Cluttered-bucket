@@ -86,9 +86,6 @@ Scripts which will save you much time while debuging and writing manifests. If y
         - `git checkout -B upstream-master -t upstream/master`
         - Do changes
         - `git merge master` or create PR in github
-1. Run `.\bin\createHooks.ps1`
-    - Tests will be executed before committing
-        - It will reduce Appveyor CI fails due to some small slip (like typo in property, wrong property type, etc)
 1. Create proper README.md
     1. Open `README.template.md`
     1. Replace all `%%templatestring%%` with real and according values
