@@ -37,11 +37,8 @@ Contains all syntax highlighting, code formating, manifest creating tools you co
 
 ### `bin` Folder
 
-Scripts which will save you much time while debuging and writing manifests. If you need help how to use them just run `Get-Help .\bin\<BINARY>.ps1`
-
-### `appveyor.yml` File
-
-- Definition of Appveyor CI pipeline
+Scripts which will save you much time while debuging and writing manifests.
+If you need help how to use them just run `Get-Help .\bin\<BINARY>.ps1`.
 
 ### `Scoop-Bucket.Tests.ps1` File
 
@@ -50,6 +47,8 @@ Scripts which will save you much time while debuging and writing manifests. If y
 
 ### `config files`
 
+- `.appveyor.yml`
+    - Definition of Appveyor CI pipeline
 - `.editorconfig`
     - Universal configuration file, compatible with all types of editors
     - Defines how files should look
@@ -59,9 +58,9 @@ Scripts which will save you much time while debuging and writing manifests. If y
 
 ## How to use and adopt this bucket
 
-1. Fork this repository
-    1. Could be just downloaded as zip
-        1. But you will lose track about upstream changes
+1. Fork / Clone this repository
+    - Cloning manually as zip is preferred as you will have `issues` available for your bucket
+        - You can always add upstream repository using command line (see Step 8)
 1. Give your bucket in new name inside github project settings
 1. Add proper description of repository
     - Information about what type of manifests could be found here
@@ -76,7 +75,8 @@ Scripts which will save you much time while debuging and writing manifests. If y
     1. Get Badge URL
         1. Open Appveyor Project settings
         1. Navigate to Badges
-        1. Copy `Sample markdown code` snippet for further usage
+        1. Copy `Branch Sample markdown code` snippet for further usage
+            - Only master branch is better, since you can freely test in other branches and do not mystificate users.
 1. Clone project into some folder
 1. Open vscode with this clone
 1. Run `git remote add 'upstream' 'https://github.com/Ash258/GenericBucket.git'`
@@ -90,7 +90,7 @@ Scripts which will save you much time while debuging and writing manifests. If y
     1. Open `README.template.md`
     1. Replace all `%%templatestring%%` with real and according values
         1. Replace appveyor status badge with yours
-            1. See: <https://www.appveyor.com/docs/status-badges/>
+            - See: <https://www.appveyor.com/docs/status-badges/>
     1. Override this README with completed `README.template.md`
     1. Remove template `README.template.md`
 1. 🎉🎉 Everything set. You are ready to write and share manifests. 🎉🎉
