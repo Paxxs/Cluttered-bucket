@@ -60,9 +60,7 @@ If you need help how to use them just run `Get-Help .\bin\<BINARY>.ps1`.
 
 ## How to use and adopt this bucket
 
-1. Fork / Clone this repository
-    - Cloning manually as zip is preferred as you will have `issues` available for your bucket
-        - You can always add upstream repository using command line (see Step 8)
+1. Click on `Use this template` to create new repository in your account with same files
 1. Give your bucket in new name inside github project settings
 1. Add proper description of repository
     - Information about what type of manifests could be found here
