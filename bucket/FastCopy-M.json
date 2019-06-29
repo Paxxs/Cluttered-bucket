@@ -1,0 +1,35 @@
+{
+    "version": "3.6.2.50",
+    "description": "FastCopy-Multilanguage",
+    "homepage": "https://github.com/Mapaler/FastCopy-M",
+    "bin": "FastCopy.exe",
+    "persist": "FastCopy2.ini",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Mapaler/FastCopy-M/releases/download/v3.6.2.50/FastCopy-M_3.6.2.50_win-64bit.zip",
+            "hash": "sha1:3af7f5a7b2a20bd1dd48c26bb5eb999ffb13e1ca"
+        },
+        "32bit": {
+            "url": "https://github.com/Mapaler/FastCopy-M/releases/download/v3.6.2.50/FastCopy-M_3.6.2.50_win-32bit.zip",
+            "hash": "sha1:d640d7f7c2f6a1312d1224253920458bc33b59e7"
+        }
+    },
+    "notes": "if 'shell extension' is enabled, it will not be automatically disabled when uninstalled",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Mapaler/FastCopy-M/releases/download/v$version/FastCopy-M_$version_win-64bit.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/Mapaler/FastCopy-M/releases/download/v$version/FastCopy-M_$version_win-32bit.zip"
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "FastCopy.exe",
+            "FastCopy-M"
+        ]
+    ]
+}
