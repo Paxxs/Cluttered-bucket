@@ -1,0 +1,30 @@
+{
+    "version": "3.9",
+    "description": "Free system tools",
+    "homepage": "http://soft.125.la/plugin.php?id=jingyi_soft:soft&cid=3",
+    "notes": "",
+    "url": "http://soft.125.la/plugin.php?id=jingyi_soft:soft&a=down&cid=3#/xz.zip",
+    "hash": "sha1:3100c022b67aba7cbe9ac9bcb14ec84bed5fbad3",
+    "bin":[
+        "精易编程助手.exe",
+        "Edbug.exe"
+    ],
+    "shortcuts": [
+        [
+            "精易编程助手.exe",
+            "精易编程助手"
+        ],
+        [
+            "Edbug.exe",
+            "网页调试助手"
+        ]
+    ],
+    "checkver":"(\\d+\\.{1}\\d+)\\s\\S+",
+    "autoupdate": {
+        "url": "http://soft.125.la/plugin.php?id=jingyi_soft:soft&a=down&cid=3#/xz.zip"
+    },
+    "persist":[
+        "Data",
+        "plugin"
+    ]
+}
