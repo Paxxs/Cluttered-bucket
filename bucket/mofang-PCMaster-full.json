@@ -1,0 +1,55 @@
+{
+    "version": "6.21",
+    "description": "软媒魔方，Windows系统增强辅助工具",
+    "homepage": "https://mofang.ruanmei.com/",
+    "url": "https://d.ruanmei.com/pcmaster/pcmaster_6.21_full.zip",
+    "hash": "b736b3265f249e00d29266346f6f47bdb76f04d1c9d1fe7f8fd6900acb554c21",
+    "extract_dir": "PCMaster",
+    "shortcuts": [
+        [
+            "pcmaster.exe",
+            "软媒魔方"
+        ],
+        [
+            "winmaster.exe",
+            "设置大师(软媒)"
+        ],
+        [
+            "visualmaster.exe",
+            "美化大师(软媒)"
+        ],
+        [
+            "pcdoctor.exe",
+            "电脑医生(软媒)"
+        ],
+        [
+            "iconmaster.exe",
+            "图标大师(软媒)"
+        ],
+        [
+            "filemaster.exe",
+            "文件大师(软媒)"
+        ],
+        [
+            "datarecovery.exe",
+            "数据恢复(软媒)"
+        ],
+        [
+            "boostmaster.exe",
+            "优化大师(软媒)"
+        ],
+        [
+            "radar.exe",
+            "系统雷达(软媒)"
+        ],
+        [
+            "softmaster.exe",
+            "软媒软件管家"
+        ]
+    ],
+    "checkver": "pcmaster_(\\d+\\.+\\d+)_full\\.zip",
+    "autoupdate": {
+        "url": "https://d.ruanmei.com/pcmaster/pcmaster_$version_full.zip"
+    },
+    "notes": "We don't persist your PC-Master data, they are still storaged in '%appdata%\\pcmaster' and 'HKEY_CURRENT_USER\\Software\\RuanMei\\PCMaster'."
+}
