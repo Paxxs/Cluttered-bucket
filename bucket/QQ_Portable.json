@@ -1,0 +1,29 @@
+{
+    "version": "9.1.0.24712",
+    "description": "基于官方数字签名为2019年3月7日的 QQ 9.1.0 (24712) 正式版制作，拥有“一键切换组件”功能",
+    "homepage": "https://github.com/Paxxs/GreenQ",
+    "notes": "安装前请先自备安装好最新版本 Visual C++ 2017 和 Universal C 运行库！否则安装过程中会报错，QQ 也可能会不能正常启动",
+    "url": "https://github.com/Paxxs/GreenQ/releases/download/9.1.0.24712/QQ.7z",
+    "hash": "sha1:7444FDC3CAA660E06B42E18DB25F10412105BCA6",
+    "installer": {
+        "file": "install.bat",
+        "keep": true
+    },
+    "uninstaller": {
+        "file": "uninstall.bat"
+    },
+    "shortcuts": [
+        [
+            "Bin/QQScLauncher.exe",
+            "腾讯QQ"
+        ],
+        [
+            "settings.bat",
+            "配置QQ"
+        ]
+    ],
+    "checkver":"github",
+    "autoupdate": {
+        "url": "https://github.com/Paxxs/GreenQ/releases/download/$version/QQ.7z"
+    }
+}
