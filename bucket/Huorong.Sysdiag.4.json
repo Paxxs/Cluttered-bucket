@@ -1,0 +1,22 @@
+{
+    "version": "4.0.93.4",
+    "description": "Huorong internet Security protects your system against threats such as malware, rogue softwares, pop-up ads, etc.",
+    "homepage": "https://www.huorong.cn/prod.html",
+    "notes": [
+        "Changing default installation directory will result in the uninstaller not being found",
+        "so DO NOT !"
+    ],
+    "url": "https://down5.huorong.cn/sysdiag-full-4.0.93.4.exe#/installer.exe",
+    "hash": "70dd28c8a94c62e3099f2d6ebd7e93fd0de46fac5e8227b10b97804c3ea3112d",
+    "installer": {
+        "file": "installer.exe",
+        "args": "/D=$dir"
+    },
+    "uninstaller": {
+        "file": "Huorong\\Sysdiag\\uninst.exe"
+    },
+    "checkver": "([\\d.]+)\\s+\\|",
+    "autoupdate": {
+        "url": "https://down5.huorong.cn/sysdiag-full-$version.exe#/installer.exe"
+    }
+}
