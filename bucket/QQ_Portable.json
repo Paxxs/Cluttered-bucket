@@ -1,9 +1,9 @@
 {
     "version": "9.1.0.24712",
-    "description": "åŸºäºå®˜æ–¹æ•°å­—ç­¾åä¸º2019å¹´3æœˆ7æ—¥çš„ QQ 9.1.0 (24712) æ­£å¼ç‰ˆåˆ¶ä½œï¼Œæ‹¥æœ‰â€œä¸€é”®åˆ‡æ¢ç»„ä»¶â€åŠŸèƒ½",
+    "description": "»ùÓÚ¹Ù·½Êı×ÖÇ©ÃûÎª2019Äê3ÔÂ7ÈÕµÄ QQ 9.1.0 (24712) ÕıÊ½°æÖÆ×÷£¬ÓµÓĞ¡°Ò»¼üÇĞ»»×é¼ş¡±¹¦ÄÜ",
     "homepage": "https://github.com/Paxxs/GreenQ",
-    "notes": "å®‰è£…å‰è¯·å…ˆè‡ªå¤‡å®‰è£…å¥½æœ€æ–°ç‰ˆæœ¬ Visual C++ 2017 å’Œ Universal C è¿è¡Œåº“ï¼å¦åˆ™å®‰è£…è¿‡ç¨‹ä¸­ä¼šæŠ¥é”™ï¼ŒQQ ä¹Ÿå¯èƒ½ä¼šä¸èƒ½æ­£å¸¸å¯åŠ¨",
-    "url": "https://github.com/Paxxs/GreenQ/releases/download/9.1.0.24712/QQ.7z",
+    "notes": "°²×°Ç°ÇëÏÈ×Ô±¸°²×°ºÃ×îĞÂ°æ±¾ Visual C++ 2017 ºÍ Universal C ÔËĞĞ¿â£¡·ñÔò°²×°¹ı³ÌÖĞ»á±¨´í£¬QQ Ò²¿ÉÄÜ»á²»ÄÜÕı³£Æô¶¯",
+    "url": "https://drive.4me.cc/apt-cdn/QQ/9.1.0.24712/QQ.7z",
     "hash": "sha1:7444FDC3CAA660E06B42E18DB25F10412105BCA6",
     "installer": {
         "file": "install.bat",
@@ -15,15 +15,15 @@
     "shortcuts": [
         [
             "Bin/QQScLauncher.exe",
-            "è…¾è®¯QQ"
+            "ÌÚÑ¶QQ"
         ],
         [
             "settings.bat",
-            "é…ç½®QQ"
+            "ÅäÖÃQQ"
         ]
     ],
     "checkver":"github",
     "autoupdate": {
-        "url": "https://github.com/Paxxs/GreenQ/releases/download/$version/QQ.7z"
+        "url": "https://drive.4me.cc/apt-cdn/QQ/$version/QQ.7z"
     }
 }

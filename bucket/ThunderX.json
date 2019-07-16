@@ -1,14 +1,14 @@
 {
     "version": "10.1.10.348",
-    "description": "è¿…é›·Xä¸ºæ‚¨å¸¦æ¥â€œæ›´å¿«çš„ä¸‹è½½é€Ÿåº¦ã€æ›´é«˜çš„ä¸‹è½½æˆåŠŸç‡ã€æ›´ä½çš„èµ„æºå ç”¨ã€æ›´é«˜æ•ˆæµç•…çš„ä¸‹è½½äº¤äº’ä½“éªŒâ€",
+    "description": "Ñ¸À×XÎªÄú´øÀ´¡°¸ü¿ìµÄÏÂÔØËÙ¶È¡¢¸ü¸ßµÄÏÂÔØ³É¹¦ÂÊ¡¢¸üµÍµÄ×ÊÔ´Õ¼ÓÃ¡¢¸ü¸ßĞ§Á÷³©µÄÏÂÔØ½»»¥ÌåÑé¡±",
     "homepage": "https://github.com/Paxxs/GreenderX",
-    "url": "https://github.com/Paxxs/GreenderX/releases/download/10.1.10.348/GreenderX_Portable.zip",
+    "url": "https://drive.4me.cc/apt-cdn/ThunderX/10.1.10.348/GreenderX_Portable.zip",
     "hash" : "sha1:99AD9CD1F6A2A439C2D78028A43CA2D23D099481",
     "persist": "profiles",
     "shortcuts": [
         [
             "Program/Thunder.exe",
-            "è¿…é›·"
+            "Ñ¸À×"
         ]
     ],
     "installer": {
@@ -20,6 +20,6 @@
     },
     "checkver":"github",
     "autoupdate": {
-        "url": "https://github.com/Paxxs/GreenderX/releases/download/$version/GreenderX_Portable.zip"
+        "url": "https://drive.4me.cc/apt-cdn/ThunderX/$version/GreenderX_Portable.zip"
     }
 }

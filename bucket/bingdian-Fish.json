@@ -1,8 +1,8 @@
 {
     "version": "3.2.8",
-    "description": "æ— éœ€ç§¯åˆ†å°±å¯ä»¥è‡ªç”±ä¸‹è½½ç™¾åº¦ã€è±†ä¸ã€ä¸é¦™ã€MBALibã€é“å®¢å·´å·´ã€Book118ç­‰æ–‡åº“æ–‡æ¡£ï¼Œæ— éœ€æ³¨å†Œå’Œç™»å½•ã€‚ä¸‹è½½çš„æ–‡æ¡£æœ€ç»ˆç”Ÿæˆé«˜æ¸…æ™°åº¦çš„pdfæ ¼å¼æ–‡æ¡£ã€‚",
+    "description": "ÎŞĞè»ı·Ö¾Í¿ÉÒÔ×ÔÓÉÏÂÔØ°Ù¶È¡¢¶¹¶¡¡¢¶¡Ïã¡¢MBALib¡¢µÀ¿Í°Í°Í¡¢Book118µÈÎÄ¿âÎÄµµ£¬ÎŞĞè×¢²áºÍµÇÂ¼¡£ÏÂÔØµÄÎÄµµ×îÖÕÉú³É¸ßÇåÎú¶ÈµÄpdf¸ñÊ½ÎÄµµ¡£",
     "homepage": "https://github.com/Paxxs/GreenFish",
-    "url": "https://github.com/Paxxs/GreenFish/releases/download/v3.2.8/bingdian.zip",
+    "url": "https://drive.4me.cc/apt-cdn/Fish/3.2.8/bingdian.zip",
     "hash": "af25b33bff743c1336462ea6007f8c89b3fbc6c78041ffe46e97c636a8714db8",
     "persist":[
         "kpdf",
@@ -11,11 +11,11 @@
     "shortcuts": [
         [
             "Fish.exe",
-            "å†°ç‚¹æ–‡åº“ä¸‹è½½å™¨"
+            "±ùµãÎÄ¿âÏÂÔØÆ÷"
         ]
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Paxxs/GreenFish/releases/download/v$version/bingdian.zip"
+        "url": "https://drive.4me.cc/apt-cdn/Fish/$version/bingdian.zip"
     }
 }

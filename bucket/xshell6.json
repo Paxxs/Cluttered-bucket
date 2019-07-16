@@ -1,9 +1,9 @@
 {
     "version": "6.0.0125",
-    "description": "Xshell 6 ä¸­æ–‡ç‰ˆæ˜¯çŸ¥åç»ˆç«¯è¿æ¥å·¥å…·ï¼Œéå¸¸å¼ºå¤§çš„SSHè¿œç¨‹ç»ˆç«¯å®¢æˆ·ç«¯",
+    "description": "Xshell 6 ÖĞÎÄ°æÊÇÖªÃûÖÕ¶ËÁ¬½Ó¹¤¾ß£¬·Ç³£Ç¿´óµÄSSHÔ¶³ÌÖÕ¶Ë¿Í»§¶Ë",
     "homepage": "https://github.com/Paxxs/greenxsh",
-    "notes": "å¸è½½ä¸ä¼šåˆ é™¤æ‚¨çš„ä¸ªäººæ•°æ®",
-    "url": "https://github.com/Paxxs/greenxsh/releases/download/v6.0.0125/Xshell.7z",
+    "notes": "Ğ¶ÔØ²»»áÉ¾³ıÄúµÄ¸öÈËÊı¾İ",
+    "url": "https://drive.4me.cc/apt-cdn/Xshell/6.0.0125/Xshell.7z",
     "hash": "4ba3e6f93896bc1cbf1ca7abd67ba581c8c11a3f2eaeb80eaf0df4d92b316b01",
     "installer": {
         "file": "install.bat",
@@ -20,6 +20,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Paxxs/greenxsh/releases/download/v$version/Xshell.7z"
+        "url": "https://drive.4me.cc/apt-cdn/Xshell/$version/Xshell.7z"
     }
 }
