@@ -1,0 +1,40 @@
+{
+    "version": "6.00.5100",
+    "description": "Aida64 Business Edition. Essential IT asset management solution for small and medium enterprises.",
+    "homepage": "https://www.aida64.com/products/aida64-business/",
+    "url": [
+        "https://drive.4me.cc/apt-cdn/Aida64/600/aida64business600.zip",
+        "https://gist.githubusercontent.com/Ash258/e143436e2f9183a650424d635b535e51/raw/cosi.aid#/pkey.txt"
+    ],
+    "hash": [
+        "5e66d138b7ac0d39e254cc7a1a8503ef2ef235d121f6bc6509cc93e2e2d0db56",
+        "eb3cca82be1f3e581bee9377f183227ab0c2e0b723b85f6da7e38e9e986224e6"
+    ],
+    "installer": {
+        "script": [
+            "$FILE = 'aida64.ini'",
+            "if (-not (Test-Path \"$persist_dir\\$FILE\")) {",
+            "    Write-Host 'No' $FILE 'exists. Creating.' -f Yellow",
+            "    $CONT = @('[Generic]', '', 'NoRegistry=1', 'NetUpdateFreq=0')",
+            "    Set-Content \"$dir\\$FILE\" ($CONT -join \"`r`n\") -Encoding Ascii",
+            "}"
+        ]
+    },
+    "persist": [
+        "pkey.txt",
+        "aida64.ini"
+    ],
+    "shortcuts": [
+        [
+            "aida64.exe",
+            "Aida64 Business"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.aida64.com/downloads/",
+        "regex": "AIDA64 Business\\s+</a></span><span.*ZIP package</span></td>\\s+<td class=\"version\">([\\d\\.]+)"
+    },
+    "autoupdate": {
+        "url": "http://download.aida64.com/aida64business$majorVersion$minorVersion.zip"
+    }
+}
