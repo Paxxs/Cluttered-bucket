@@ -1,0 +1,16 @@
+{
+    "version": "9.61.419.1421",
+    "description": "驱动精灵免安装版是一键检测系统驱动问题，快速帮您安装缺少的硬件驱动，本版本是绿色版无广告弹窗干扰，便于您随时使用",
+    "url": "https://drive.4me.cc/apt-cdn/DriverGenius-Green/9.61.419.1421/DriverGenius.zip",
+    "hash": "sha1:FCFE74F6AE7873D1643A526880F993B0103952F0",
+    "shortcuts": [
+        [
+            "drivergenius.exe",
+            "驱动精灵"
+        ],
+        [
+            "dgbackup.exe",
+            "驱动备份"
+        ]
+    ]
+}
