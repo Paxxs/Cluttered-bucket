@@ -8,26 +8,35 @@ or
 
 ## Manifests
 
-| Name **(json)**                                              |                  Tested                   |      Checkver      |        Autoupdate (Hash)        |      Official      |
-| ------------------------------------------------------------ | :---------------------------------------: | :----------------: | :-----------------------------: | :----------------: |
-| [精易编程助手 **(125-Tools)**](./bucket/125-Tools.json)      | :large_orange_diamond: :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: (:no_entry:)​ | :heavy_check_mark: |
-| [360驱动大师 **(360DrvMgr)**](./bucket/360DrvMgr.json)       |         :tada::heavy_check_mark:          |        :x:         |            :x: (:x:)            |        :x:         |
-| [Aida64:Ex/Bu/Ex **(Aida64-Ex/Bu/Ex)**](./bucket/Aida64-Ex/Bu/Ex.json) |         :tada: :heavy_check_mark:         | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
-| [冰点文库下载器 **(bingdian-Fish)**](./bucket/bingdian-Fish.json) |         :tada::heavy_check_mark:          |        :x:         |            :x: (:x:)            |        :x:         |
-| [DirectX Repair **(DirectX_Repair)**](./bucket/DirectX_Repair.json) |  :heavy_check_mark: :hammer_and_wrench:   | :heavy_check_mark: |            :x: (:x:)            | :heavy_check_mark: |
-| [docker machine vmwareworkstation **(docker.machine.vmwareworkstation)**](./bucket/docker.machine.vmwareworkstation.json) |            :heavy_check_mark:             | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
-| [驱动精灵 **(DriverGenius)**](./bucket/DriverGenius.json)    |         :tada::heavy_check_mark:          |        :x:         |            :x: (:x:)            |        :x:         |
-| [FastCopy-M **(FastCopy-M)**](./bucket/FastCopy-M.json)      |            :heavy_check_mark:             | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
-| [菲菲更名宝贝 **(FFRenamePro)**](./bucket/FFRenamePro.json)  |            :heavy_check_mark:             | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
-| [火绒安全4.0 **(Huorong.Sysdiag.4)**](./bucket/Huorong.Sysdiag.4.json) |  :large_orange_diamond: :jack_o_lantern:  | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
-| [火绒安全5公测版 **(Huorong.Sysdiag.5)**](./bucket/Huorong.Sysdiag.5.json) |  :large_orange_diamond: :jack_o_lantern:  |        :x:         |            :x: (:x:)            | :heavy_check_mark: |
-| [KeybMap64 **(KeybMap64)**](./bucket/KeybMap64.json)         |            :heavy_check_mark:             |     :no_entry:     |            :x: (:x:)            | :heavy_check_mark: |
-| [Listary5 **(Listary5.Third)**](./bucket/Listary5.Third.json) |          :tada::jack_o_lantern:           | :heavy_check_mark: |            :x: (:x:)            |        :x:         |
-| [软媒魔方 **(mofang-PCMaster-full)**](./bucket/mofang-PCMaster-full.json) | :large_orange_diamond::heavy_check_mark:  | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
-| [QQ **(QQ_Portable)**](./bucket/QQ_Portable.json)            | :large_orange_diamond::heavy_check_mark:  |        :x:         |            :x: (:x:)            |        :x:         |
-| [Sakura frpc **(Sakura_frpc)**](./bucket/Sakura_frpc.json)   |            :heavy_check_mark:             | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
-| [SakuraFrp GUI **(SakuraFrp-GUI)**](./bucket/SakuraFrp-GUI.json) |            :heavy_check_mark:             | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
-| [sdr Cleaner **(sdr-Cleaner)**](./bucket/sdr-Cleaner.json)   |            :heavy_check_mark:             |        :x:         |            :x: (:x:)            | :heavy_check_mark: |
+| Name **(json)**                                              |                     Tested                     |      Checkver      |        Autoupdate (Hash)        |      Official      |
+| ------------------------------------------------------------ | :--------------------------------------------: | :----------------: | :-----------------------------: | :----------------: |
+| [精易编程助手 **(125-Tools)**](./bucket/125-Tools.json)      |   :large_orange_diamond: :heavy_check_mark:    | :heavy_check_mark: | :heavy_check_mark: (:no_entry:)​ | :heavy_check_mark: |
+| [360驱动大师 **(360DrvMgr)**](./bucket/360DrvMgr.json)       |            :tada::heavy_check_mark:            |        :x:         |            :x: (:x:)            |        :x:         |
+| [Aida64:Ex/Bu/Ex **(Aida64-Ex/Bu/Ex)**](./bucket/Aida64-Ex/Bu/Ex.json) |           :tada: :heavy_check_mark:            | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
+| [冰点文库下载器 **(bingdian-Fish)**](./bucket/bingdian-Fish.json) |            :tada::heavy_check_mark:            |        :x:         |            :x: (:x:)            |        :x:         |
+| [DirectX Repair **(DirectX_Repair)**](./bucket/DirectX_Repair.json) |     :heavy_check_mark: :hammer_and_wrench:     | :heavy_check_mark: |            :x: (:x:)            | :heavy_check_mark: |
+| [docker machine vmwareworkstation **(docker.machine.vmwareworkstation)**](./bucket/docker.machine.vmwareworkstation.json) |               :heavy_check_mark:               | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
+| [驱动精灵 **(DriverGenius)**](./bucket/DriverGenius.json)    |            :tada::heavy_check_mark:            |        :x:         |            :x: (:x:)            |        :x:         |
+| [FastCopy-M **(FastCopy-M)**](./bucket/FastCopy-M.json)      |               :heavy_check_mark:               | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
+| [菲菲更名宝贝 **(FFRenamePro)**](./bucket/FFRenamePro.json)  |               :heavy_check_mark:               | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
+| [火绒安全4.0 **(Huorong.Sysdiag.4)**](./bucket/Huorong.Sysdiag.4.json) |    :large_orange_diamond: :jack_o_lantern:     | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
+| [火绒安全5公测版 **(Huorong.Sysdiag.5)**](./bucket/Huorong.Sysdiag.5.json) |    :large_orange_diamond: :jack_o_lantern:     |        :x:         |            :x: (:x:)            | :heavy_check_mark: |
+| [KeybMap64 **(KeybMap64)**](./bucket/KeybMap64.json)         |               :heavy_check_mark:               |     :no_entry:     |            :x: (:x:)            | :heavy_check_mark: |
+| [Listary5 **(Listary5.Third)**](./bucket/Listary5.Third.json) |             :tada::jack_o_lantern:             | :heavy_check_mark: |            :x: (:x:)            |        :x:         |
+| [软媒魔方 **(mofang-PCMaster-full)**](./bucket/mofang-PCMaster-full.json) |    :large_orange_diamond::heavy_check_mark:    | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
+| [QQ **(QQ_Portable)**](./bucket/QQ_Portable.json)            | :tada::large_orange_diamond::heavy_check_mark: |        :x:         |            :x: (:x:)            |        :x:         |
+| [Sakura frpc **(Sakura_frpc)**](./bucket/Sakura_frpc.json)   |               :heavy_check_mark:               | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
+| [SakuraFrp GUI **(SakuraFrp-GUI)**](./bucket/SakuraFrp-GUI.json) |               :heavy_check_mark:               | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
+| [sdr Cleaner **(sdr-Cleaner)**](./bucket/sdr-Cleaner.json)   |               :heavy_check_mark:               |        :x:         |            :x: (:x:)            | :heavy_check_mark: |
+| [Sketchpad 5 **(Sketchpad.5)**](./bucket/Sketchpad.5.json)   |             :tada::jack_o_lantern:             |        :x:         |            :x: (:x:)            |        :x:         |
+| [SmartTaskbar **(SmartTaskbar)**](./bucket/SmartTaskbar.json) |               :heavy_check_mark:               | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
+| [ThunderX **(ThunderX)**](./bucket/ThunderX.json)            |            :tada::heavy_check_mark:            |        :x:         |            :x: (:x:)            |        :x:         |
+| [Fluent Terminal **(UWP.Fluent-Terminal)**](./bucket/UWP.Fluent-Terminal.json) |               :heavy_check_mark:               | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
+| [Windows Auto Night Mode **(Windows.Auto.Night.Mode)**](./bucket/Windows.Auto.Night.Mode.json) |               :heavy_check_mark:               | :heavy_check_mark: | :heavy_check_mark: (:no_entry:) | :heavy_check_mark: |
+| [Winrar **(winrar-sc)**](./bucket/winrar-sc.json)            |               :heavy_check_mark:               | :heavy_check_mark: |            :x: (:x:)            | :heavy_check_mark: |
+| [Xshell **(xshell6)**](./bucket/xshell6.json)                |               :heavy_check_mark:               |        :x:         |            :x: (:x:)            |        :x:         |
+| [Xmind **(Xmind-8)**](./bucket/Xmind-8.json)                 |  :tada::large_orange_diamond::jack_o_lantern:  |        :x:         |            :x: (:x:)            |        :x:         |
+| [有道词典 **(YoudaoDict.Pure)**](./bucket/YoudaoDict.Pure.json) |  :tada::large_orange_diamond::jack_o_lantern:  | :heavy_check_mark: |            :x: (:x:)            |        :x:         |
 
 - :heavy_check_mark: Yes
 - :x: No
