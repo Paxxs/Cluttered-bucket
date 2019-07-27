@@ -1,0 +1,14 @@
+{
+    "version": "2019.1",
+    "description": "TBToolbox - the purest hardware toolbox",
+    "homepage": "https://www.tbtool.cn/",
+    "license": {"identifier": "Freeware"},
+    "url": "https://drive.4me.cc/apt-cdn/TBToolBox/2019.1/tbtool.7z",
+    "hash": "13ac19c827cb9254790846d483b8b46fc6eed3459e13b63ff6eba506b9be3bf3",
+    "shortcuts": [
+        [
+            "tbTools.exe",
+            "TB ToolBox"
+        ]
+    ]
+}
