@@ -101,4 +101,27 @@
             "\"}\"",
         ],
     },
+    "Check for existing persist dir": {
+        "prefix": "persistdirCheck",
+        "scope": "json,jsonc",
+        "body": [
+            "\"\\$file = '$1'\",",
+            "\"if (!(Test-Path \\\"\\$persist_dir\\\\\\\\\\$file\\\")) {\",",
+            "\"\tWrite-Host 'File' \\$file 'does not exists. Creating.' -f Yellow\",",
+            "\"\tNew-Item -Path $dir\\\\\\\\\\$file -ItemType Directory\",",
+            "\"}\"",
+        ],
+    },
+    "make junction persist dir to appdata": {
+        "prefix": "jun2appdata",
+        "scope": "json,jsonc",
+        "body": [
+            "\"\\$file = '$1'\",",
+            "\"if (!(Test-Path \\\"\\$dir\\\\\\\\\\$file\\\")) {\",",
+            "\"\tWrite-Host 'File' \\$file 'does not exists. Creating.' -f Yellow\",",
+            "\"\tNew-Item -Path \\$dir\\\\\\\\\\$file -ItemType Directory\",",
+            "\"}\",",
+            "\"New-Item -Path \\$env:APPDATA\\\\\\\\\\$file -ItemType Junction -Value \\$dir\\\\\\\\\\$file\"",
+        ],
+    },
 }
