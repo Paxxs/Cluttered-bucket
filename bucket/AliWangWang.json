@@ -1,0 +1,17 @@
+{
+    "version": "9.12.05",
+    "description": "阿里旺旺是将原先的淘宝旺旺与阿里巴巴贸易通整合在一起的一个新品牌。它是淘宝和阿里巴巴为商人量身定做的免费网上商务沟通软件/聊天工具",
+    "homepage": "https://wangwang.taobao.com",
+    "url": "https://drive.4me.cc/apt-cdn/AliWangWang/9.12.05/AliWangWang.7z",
+    "hash": "b25ed73d339e2423baf0b3046f32baef5141982684659a8bd78044df1c17a7f7",
+    "persist" : "profiles",
+    "uninstaller": {
+        "script": "Remove-Item \"$env:APPDATA\\AliWangWang\" -Force -Recurse"
+    },
+    "shortcuts": [
+        [
+            "AliIM.exe",
+            "阿里旺旺"
+        ]
+    ]
+}
