@@ -19,16 +19,7 @@
         "   New-Item -Path dir\\$file -ItemType Directory",
         "}"
     ],
-    "installer": {
-        "script":[
-            "$file = 'HelloFont'",
-            "if (!(Test-Path \"$dir\\$file\")) {",
-            "   Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
-            "   New-Item -Path $dir\\$file -ItemType Directory",
-            "}",
-            "New-Item -Path $env:APPDATA\\$file -ItemType Junction -Value $dir\\$file"
-        ]
-    },
+    "post_install": "New-Item -Path $env:APPDATA\\HelloFont -ItemType Junction -Value $dir\\HelloFont",
     "uninstaller": {
         "script": "Remove-Item $env:APPDATA\\HelloFont -Force -Recurse"
     }
