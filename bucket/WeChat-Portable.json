@@ -12,14 +12,9 @@
         "   New-Item -Path $dir\\WeChatData -ItemType Directory",
         "}"
     ],
-    "installer": {
-        "script":[
-            "if (!(Test-Path \"$dir\\WeChatData\")) {",
-            "   New-Item -Path $dir\\WeChatData -ItemType Directory",
-            "}",
-            "New-Item -Path $env:APPDATA\\Tencent\\WeChat -ItemType Junction -Value $dir\\WeChatData"
-        ]
-    },
+    "post_install":[
+        "New-Item -Path $env:APPDATA\\Tencent\\WeChat -ItemType Junction -Value $dir\\WeChatData"
+    ],
     "uninstaller": {
         "script": "Remove-Item $env:APPDATA\\Tencent\\WeChat -Force -Recurse"
     },
