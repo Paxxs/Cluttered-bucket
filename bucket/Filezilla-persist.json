@@ -1,0 +1,71 @@
+{
+    "version": "3.43.0",
+    "description": "Fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.",
+    "homepage": "https://filezilla-project.org/",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://download.filezilla-project.org/client/FileZilla_3.43.0_win64.zip",
+            "hash": "sha512:b13277adbeabf26f6a7c2ffdcd51f11781436f8aa994f435d57474736598c9d15e210d61bf108ed20c33cd5c240f52602740f63efbd36333bf1dd0f71aa7a178"
+        },
+        "32bit": {
+            "url": "https://download.filezilla-project.org/client/FileZilla_3.43.0_win32.zip",
+            "hash": "sha512:7f58366727470c8db7d237290bb8b8a1f0b431409077b5cacafb99b6c28852e49ae7b2673c41a9843f9c336d6c708c6178121af8dc5595a2ea1a69b52c95d83d"
+        }
+    },
+    "extract_dir": "FileZilla-3.43.0",
+    "pre_install": [
+        "$file = 'fzdefaults.xml'",
+        "if (-not (Test-Path \"$persist_dir\\$file\")) {",
+        "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
+        "    #核心配置不存在，创建",
+        "    $xml = [xml](Get-Content \"$dir\\docs\\fzdefaults.xml.example\")",
+        "    $setting = $xml.FileZilla3.Settings.Setting",
+        "    $configLocation = $setting |",
+        "    Where-Object {",
+        "        $_.Name -match \"Config Location\"",
+        "    }",
+        "    $configLocation.'#text' = \"$dir/Config/\" -replace \"\\\\\",\"/\"",
+        "",
+        "    $cacheDirectory = $setting |",
+        "    Where-Object {",
+        "        $_.Name -match \"Cache directory\"",
+        "    }",
+        "    #$env:TEMP",
+        "    $cacheDirectory.'#text' = \"$env:TEMP/filezillacache\" -replace \"\\\\\",\"/\"",
+        "",
+        "    $xml.Save(\"$dir\\fzdefaults.xml\")",
+        "",
+        "    #Copy-Item \"$dir\\docs\\fzdefaults.xml.example\" \"$dir\\fzdefaults.xml\"",
+        "}"
+    ],
+    "bin": "filezilla.exe",
+    "shortcuts": [
+        [
+            "filezilla.exe",
+            "FileZilla"
+        ]
+    ],
+    "persist": [
+        "fzdefaults.xml",
+        "Config"
+    ],
+    "checkver": {
+        "url": "https://filezilla-project.org/download.php?show_all=1",
+        "re": "The latest stable version of FileZilla Client is ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.filezilla-project.org/client/FileZilla_$version_win64.zip"
+            },
+            "32bit": {
+                "url": "https://download.filezilla-project.org/client/FileZilla_$version_win32.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/FileZilla_$version.sha512"
+        },
+        "extract_dir": "FileZilla-$version"
+    }
+}
