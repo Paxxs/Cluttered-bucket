@@ -4,9 +4,13 @@
     "url": "https://drive.4me.cc/apt-cdn/DriverGenius-Green/9.61.419.1421/DriverGenius.zip",
     "hash": "sha1:FCFE74F6AE7873D1643A526880F993B0103952F0",
     "uninstaller": {
-        "script": "sudo Remove-Item HKLM:\\SOFTWARE\\WOW6432Node\\MyDrivers -Force -Recurse"
+        "script": [
+            "If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] \"Administrator\")){",
+            "    abort \"ERROR: uninstall require UAC. Please try again.\"",
+            "}",
+            "Remove-Item HKLM:\\SOFTWARE\\WOW6432Node\\MyDrivers -Force -Recurse"
+        ]
     },
-    "depends": "sudo",
     "shortcuts": [
         [
             "drivergenius.exe",

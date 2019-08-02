@@ -1,5 +1,5 @@
 {
-    "version": "2019.1",
+    "version": "2019.01",
     "description": "TBToolbox - the purest hardware toolbox",
     "homepage": "https://www.tbtool.cn/",
     "license": {"identifier": "Freeware"},
@@ -10,5 +10,9 @@
             "tbTools.exe",
             "TB ToolBox"
         ]
-    ]
+    ],
+    "checkver":{
+        "url": "https://www.weidown.com/xiazai/1437.html",
+        "regex": "(\\d{4}\\.\\d{2})"
+    }
 }

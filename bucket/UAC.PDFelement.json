@@ -16,9 +16,11 @@
         "48aba879be487d58b6d3f53215e28d3fc135ef665121047a76a6c097045bc456",
         "fd3292348856a9839771420dbec8706d819bd7e949e47199cf7b8f11ca347ad0"
     ],
-    "depends": "sudo",
     "installer": {
         "script": [
+            "If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] \"Administrator\")){",
+                "    abort \"ERROR: uninstall require UAC. Please try again.\"",
+                "}",
             "Write-Host \"S1. install main program 'PDFelement'\" -ForegroundColor DarkCyan",
             "Start-Process $dir\\install.exe -ArgumentList \"/VERYSILENT\",\"/SUPPRESSMSGBOXES\",\"/DIR=`\"$dir`\"\" -Wait -Verb RunAs",
             "",
@@ -40,6 +42,9 @@
     },
     "uninstaller": {
         "script": [
+            "If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] \"Administrator\")){",
+                "    abort \"ERROR: uninstall require UAC. Please try again.\"",
+                "}",
             "Write-Host \"S1. run uninstaller\" -ForegroundColor DarkCyan",
             "Start-Process $dir\\unins000.exe -ArgumentList \"/VERYSILENT\",\"/SUPPRESSMSGBOXES\",\"/NOCANCEL\" -Wait -Verb RunAs",
             "",
@@ -51,9 +56,9 @@
             "Remove-Item HKCU:\\Software\\Wondershare -Recurse -Force",
             "Remove-ItemProperty HKCU:\\Printers\\ConvertUserDevModesCount \"Wondershare PDFelement\"",
             "Remove-ItemProperty HKLM:\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Run\\ \"Wondershare Helper Compact.exe\"",
-            "sudo Remove-ItemProperty HKLM:\\SOFTWARE\\RegisteredApplications \"Wondershare PDFelement 7 Pro\"",
-            "sudo Remove-Item \"HKLM:\\SOFTWARE\\WOW6432Node\\PEPrinter\\Wondershare PDFelement Monitor\" -Force -Recurse",
-            "sudo Remove-Item \"HKLM:\\SOFTWARE\\WOW6432Node\\Wondershare\" -Force -Recurse"
+            "Remove-ItemProperty HKLM:\\SOFTWARE\\RegisteredApplications \"Wondershare PDFelement 7 Pro\"",
+            "Remove-Item \"HKLM:\\SOFTWARE\\WOW6432Node\\PEPrinter\\Wondershare PDFelement Monitor\" -Force -Recurse",
+            "Remove-Item \"HKLM:\\SOFTWARE\\WOW6432Node\\Wondershare\" -Force -Recurse"
         ]
     },
     "checkver": "PDFelement Pro ([\\d.]+)"

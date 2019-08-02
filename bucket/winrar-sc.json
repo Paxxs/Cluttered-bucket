@@ -1,11 +1,11 @@
-{
+ï»¿{
     "version": "5.71",
     "description": "Winrar. Powerful archive manager.",
     "homepage": "https://rarlab.com/",
     "license": "Shareware",
     "notes": [
         "Set up context menu within settings window.",
-        "´úÀí°æÕı³£ÏÂÔØÊÇÓĞ¹ã¸æµÄ°æ±¾£¬¹Ê²»×Ô¶¯¸üĞÂ"
+        "ä»£ç†ç‰ˆæ­£å¸¸ä¸‹è½½æ˜¯æœ‰å¹¿å‘Šçš„ç‰ˆæœ¬ï¼Œæ•…ä¸è‡ªåŠ¨æ›´æ–°"
     ],
     "architecture": {
         "64bit": {
@@ -20,7 +20,7 @@
     "pre_install": [
         "$str=@\"",
         "RAR registration data",
-        "ºúÂÜ²·ÖÜ",
+        "èƒ¡èåœå‘¨",
         "www.carrotchou.blog",
         "UID=4a74fbd3f8585bb0b4d7",
         "6412212250b4d748b4f9e493f8ddf8da7418271b9c30d1478239fa",

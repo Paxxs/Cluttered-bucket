@@ -23,5 +23,9 @@
             "WeChat.exe",
             "WeChat"
         ]
-    ]
+    ],
+    "checkver":{
+        "url": "https://www.nocmd.com/477.html",
+        "regex": "([\\d.]+) PC"
+    }
 }

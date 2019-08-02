@@ -1,17 +1,28 @@
-{
+ï»¿{
     "version": "9.12.05",
-    "description": "°¢ÀïÍúÍúÊÇ½«Ô­ÏÈµÄÌÔ±¦ÍúÍúÓë°¢Àï°Í°ÍÃ³Ò×Í¨ÕûºÏÔÚÒ»ÆğµÄÒ»¸öĞÂÆ·ÅÆ¡£ËüÊÇÌÔ±¦ºÍ°¢Àï°Í°ÍÎªÉÌÈËÁ¿Éí¶¨×öµÄÃâ·ÑÍøÉÏÉÌÎñ¹µÍ¨Èí¼ş/ÁÄÌì¹¤¾ß",
+    "description": "é˜¿é‡Œæ—ºæ—ºæ˜¯å°†åŸå…ˆçš„æ·˜å®æ—ºæ—ºä¸é˜¿é‡Œå·´å·´è´¸æ˜“é€šæ•´åˆåœ¨ä¸€èµ·çš„ä¸€ä¸ªæ–°å“ç‰Œã€‚å®ƒæ˜¯æ·˜å®å’Œé˜¿é‡Œå·´å·´ä¸ºå•†äººé‡èº«å®šåšçš„å…è´¹ç½‘ä¸Šå•†åŠ¡æ²Ÿé€šè½¯ä»¶",
     "homepage": "https://wangwang.taobao.com",
     "url": "https://drive.4me.cc/apt-cdn/AliWangWang/9.12.05/AliWangWang.7z",
     "hash": "b25ed73d339e2423baf0b3046f32baef5141982684659a8bd78044df1c17a7f7",
     "persist" : "profiles",
+    "pre_install":[
+        "$file = 'profiles'",
+        "if (!(Test-Path \"$persist_dir\\$file\")) {",
+        "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
+        "    New-Item -Path $dir\\$file -ItemType Directory",
+        "}"
+    ],
     "uninstaller": {
         "script": "Remove-Item \"$env:APPDATA\\AliWangWang\" -Force -Recurse"
     },
     "shortcuts": [
         [
             "AliIM.exe",
-            "°¢ÀïÍúÍú"
+            "é˜¿é‡Œæ—ºæ—º"
         ]
-    ]
+    ],
+    "checkver":{
+        "url": "http://www.carrotchou.blog/4036.html",
+        "regex": "v([\\d.]+)"
+    }
 }

@@ -1,4 +1,4 @@
-{
+ï»¿{
     "homepage": "https://music.163.com/",
     "description": "NetEase Cloud Music client.",
     "version": "2.5.4.197709",
@@ -17,12 +17,12 @@
     "shortcuts": [
         [
             "cloudmusic.exe",
-            "ÍøÒ×ÔÆÒôÀÖ"
+            "ç½‘æ˜“äº‘éŸ³ä¹"
         ]
     ],
     "checkver": {
-        "url": "https://h404bi.azurewebsites.net/ncmversion.php",
-        "regex": "dmusic\\\\/(?<4>[\\w]+)\\\\/(?<13>[\\d]+)\\\\/cloudmusicsetup(?<version>[\\d.]+).exe"
+        "url": "http://www.ypojie.com/5150.html",
+        "regex": "v([\\d.]+)"
     },
     "notes": "We don't persist your CloudMusic data."
 }
