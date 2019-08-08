@@ -14,6 +14,19 @@
             "冰点文库下载器"
         ]
     ],
+    "pre_install":[
+        "function CreateDirectory {",
+        "    param (",
+        "        [string]$file",
+        "    )",
+        "    if (!(Test-Path \"$persist_dir\\$file\")) {",
+        "        Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
+        "        New-Item -Path $dir\\$file -ItemType Directory -Force | Out-Null",
+        "    }",
+        "}",
+        "CreateDirectory 'kpdf'",
+        "CreateDirectory 'kini'"
+    ],
     "checkver": {
         "url": "http://www.carrotchou.blog/130.html",
         "regex": "v([\\d.]+)"

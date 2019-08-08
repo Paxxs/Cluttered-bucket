@@ -1,5 +1,5 @@
-{
-    "version": "3.9",
+﻿{
+    "version": "nightly",
     "description": "Free system tools",
     "homepage": "http://soft.125.la/plugin.php?id=jingyi_soft:soft&cid=3",
     "notes": "",
@@ -22,5 +22,16 @@
     "persist":[
         "Data",
         "plugin"
+    ],
+    "pre_install":[
+        "function CreateDirectory {",
+        "    param (",
+        "        [string]$file",
+        "    )",
+        "    if (!(Test-Path \"$persist_dir\\$file\")) {",
+        "        Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
+        "        New-Item -Path $dir\\$file -ItemType Directory -Force | Out-Null",
+        "    }",
+        "}"
     ]
 }
