@@ -85,6 +85,12 @@
             "# }"
         ]
     },
+    "uninstaller": {
+        "script":[
+            "Remove-Item $env:APPDATA\\Daum -Recurse -Force",
+            "Remove-Item HKCU:\\Software\\DAUM -Recurse -Force"
+        ]
+    },
     "persist": [
         "Skins",
         "Capture",
