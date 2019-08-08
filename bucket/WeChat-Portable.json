@@ -1,4 +1,4 @@
-{
+﻿{
     "version": "2.6.8.65",
     "description": "Available for all kinds of platforms; enjoy group chat; support voice/photo/video and text messages.",
     "homepage": "https://www.wechat.com/en",
@@ -26,6 +26,6 @@
     ],
     "checkver":{
         "url": "https://www.nocmd.com/477.html",
-        "regex": "v([\\d.]+) "
+        "regex": "([\\d.]+).+- NoCmd"
     }
 }
