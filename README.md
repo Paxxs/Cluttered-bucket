@@ -93,4 +93,8 @@ If you need help how to use them just run `Get-Help .\bin\<BINARY>.ps1`.
             - See: <https://www.appveyor.com/docs/status-badges/>
     1. Override this README with completed `README.template.md`
     1. Remove template `README.template.md`
+1. Repository tweaks
+    1. Open `.github\CODEOWNERS` and change `@Ash258` to your github username
+    1. Actions
+        1. Open each file in `.github\workflows` and change `youremail@email.com` with your email
 1. 🎉🎉 Everything set. You are ready to write and share manifests. 🎉🎉
