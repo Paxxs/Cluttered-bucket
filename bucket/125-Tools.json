@@ -1,10 +1,10 @@
-﻿{
-    "version": "nightly",
+{
+    "version": "3.9",
     "description": "Free system tools",
     "homepage": "http://soft.125.la/plugin.php?id=jingyi_soft:soft&cid=3",
     "notes": "",
     "url": "http://soft.125.la/plugin.php?id=jingyi_soft:soft&a=down&cid=3#/xz.zip",
-    "hash": "sha1:3100c022b67aba7cbe9ac9bcb14ec84bed5fbad3",
+    "hash": "b59ca93a7f4e3ba6b9074808d3017cff9642d65dca33be5c9bb91ec77f86275a",
     "shortcuts": [
         [
             "精易编程助手.exe",
@@ -15,15 +15,15 @@
             "网页调试助手"
         ]
     ],
-    "checkver":"(\\d+\\.{1}\\d+)\\s\\S+",
+    "checkver": "(\\d+\\.{1}\\d+)\\s\\S+",
     "autoupdate": {
         "url": "http://soft.125.la/plugin.php?id=jingyi_soft:soft&a=down&cid=3#/xz.zip"
     },
-    "persist":[
+    "persist": [
         "Data",
         "plugin"
     ],
-    "pre_install":[
+    "pre_install": [
         "function CreateDirectory {",
         "    param (",
         "        [string]$file",
