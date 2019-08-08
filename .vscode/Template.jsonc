@@ -6,7 +6,7 @@
     "homepage": "https://ash258.com",
     "license": {
         "identifier": "MIT",
-        "url": "https://ash258.com" // Whenever it's possile attach program specific URL otherwise dont use
+        "url": "https://ash258.com" // Whenever possible attach a program specific URL, otherwise don't use
     },
     "notes": [ // String or Array Of Strings
         "Some notes shown after installation"
