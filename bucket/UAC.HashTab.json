@@ -49,11 +49,13 @@
             "    $FilePath = \"$dir\\HashTab32.dll\"",
             "}",
             "$Result = Start-Process -FilePath $regsvr -Args \"/u /s $FilePath\" -Wait -NoNewWindow -PassThru",
+            "Remove-Item HKCU:\\Software\\HashTab -Force -Recurse",
             "if ($Result.ExitCode -ne 0) {",
             "    error \"regsvr32 exited with error $($Result.ExitCode)\"",
             "}"
         ]
     },
+    "notes":"Purposely designed to feel like a native feature of Windows: Simply select any file, go to properties, and use the new “File Hashes” tab.",
     "checkver": "v([\\d.]+)",
     "autoupdate": {
         "url": "http://implbits.com/products/hashtab/HashTab_v$version_Setup.exe#/cosi.7z"
