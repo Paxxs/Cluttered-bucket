@@ -1,4 +1,4 @@
-{
+﻿{
     "version": "3.9",
     "description": "Free system tools",
     "homepage": "http://soft.125.la/plugin.php?id=jingyi_soft:soft&cid=3",
@@ -8,11 +8,11 @@
     "shortcuts": [
         [
             "精易编程助手.exe",
-            "精易编程助手"
+            "精易工具\\精易编程助手"
         ],
         [
             "Edbug.exe",
-            "网页调试助手"
+            "精易工具\\网页调试助手"
         ]
     ],
     "checkver": "(\\d+\\.{1}\\d+)\\s\\S+",
