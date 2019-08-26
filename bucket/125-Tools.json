@@ -1,10 +1,10 @@
-﻿{
-    "version": "3.9",
+{
+    "version": "3.92",
     "description": "Free system tools",
     "homepage": "http://soft.125.la/plugin.php?id=jingyi_soft:soft&cid=3",
     "notes": "",
     "url": "http://soft.125.la/plugin.php?id=jingyi_soft:soft&a=down&cid=3#/xz.zip",
-    "hash": "b59ca93a7f4e3ba6b9074808d3017cff9642d65dca33be5c9bb91ec77f86275a",
+    "hash": "e0f15229aceb318d961b27ebf87c7bffbdc60cebd306ed1bb4a1c2eb1edff633",
     "shortcuts": [
         [
             "精易编程助手.exe",
