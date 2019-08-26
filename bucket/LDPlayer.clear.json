@@ -1,10 +1,10 @@
-﻿{
-    "version": "3.67",
+{
+    "version": "3.69",
     "license": "Unknown",
     "homepage": "https://www.ldplayer.net/",
     "description": "An Android emulator optimized for mobile gaming with lower resource consumption",
-    "url": "https://encdn.ldmnq.com/download/en/LDPlayer_3.67.exe#/dl.7z",
-    "hash": "3fa628a47050344641cd89a50c0c74ea193bcce180c6dbfd0fa5fb688300e3ca",
+    "url": "https://encdn.ldmnq.com/download/en/LDPlayer_3.69.exe#/dl.7z",
+    "hash": "4ac5346d36e0a2b79bb426a1be6b5fd3beebf041663d2d3497a65eaa21f8243e",
     "shortcuts": [
         [
             "dnplayer.exe",
@@ -20,7 +20,7 @@
         ]
     ],
     "installer": {
-        "script":[
+        "script": [
             "$adfiles = @(\"$env:APPDATA\\ChangZhi\\cache\",\"$env:APPDATA\\ChangZhi2\\cache\")",
             "foreach ($ad in $adfiles) {",
             "    if (-NOT (Test-Path $ad)) {",
@@ -39,7 +39,7 @@
     },
     "post_install": "Write-Host 'You need admin right to run repairer to get ldplayer working' -ForegroundColor Green",
     "uninstaller": {
-        "script":[
+        "script": [
             "If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] \"Administrator\")){",
             "    abort \"ERROR: uninstall require UAC. Please try again.\"",
             "}",
