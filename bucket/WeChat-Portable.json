@@ -26,6 +26,6 @@
     ],
     "checkver":{
         "url": "https://www.nocmd.com/477.html",
-        "regex": "([\\d.]+).+- NoCmd"
+        "regex": "/([\\d.]+)"
     }
 }
