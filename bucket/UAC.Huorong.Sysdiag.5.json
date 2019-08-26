@@ -1,13 +1,13 @@
 {
-    "version": "5.0.18.7",
+    "version": "5.0.20.6",
     "description": "Huorong internet Security protects your system against threats such as malware, rogue softwares, pop-up ads, etc.",
     "homepage": "https://www.huorong.cn/person5.html",
     "notes": [
         "Changing default installation directory will result in the uninstaller not being found",
         "so DO NOT !"
     ],
-    "url": "https://down5.huorong.cn/sysdiag-full-5.0.18.7.exe#/installer.exe",
-    "hash": "d495818cb1ba2a0f672d0fb61a8b92741fb98656b38280969f4de7b2f2fb8f13",
+    "url": "https://down5.huorong.cn/sysdiag-full-5.0.20.6.exe#/installer.exe",
+    "hash": "bc7762219dfd0c9d85ae358d5310c96b84acc2917db361ef5197b1e794a36829",
     "installer": {
         "file": "installer.exe",
         "args": "/D=$dir"
