@@ -1,11 +1,11 @@
 {
-    "version": "6.401",
+    "version": "6.511",
     "description": "Office Tool is a tool to deploy and activate Office/Visio/Project. By using Office Tool, you can quickly deploy Office in Win7/8/10.",
     "homepage": "https://otp.landian.vip/en-us",
     "url": "https://server.lancdn.com/otp/update/OTPUpdater.exe",
     "hash": "7d28463c946e427b7add5cdd1b4f48460aca7fbe51cc309e63c6ad188c720fb3",
     "installer": {
-        "script":[
+        "script": [
             "$currentPrincipal = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())",
             "$isAdmin = $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)",
             "if (!$isAdmin){",
