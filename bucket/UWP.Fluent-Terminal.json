@@ -62,6 +62,6 @@
     },
     "checkver":"github",
     "autoupdate": {
-        "url": "https://github.com/felixse/FluentTerminal/releases/download/$version/FluentTerminal.App_0.5.3.0_Test.zip#/install.zip"
+        "url": "https://github.com/felixse/FluentTerminal/releases/download/$version/FluentTerminal.App_$version_Test.zip#/install.zip"
     }
 }
