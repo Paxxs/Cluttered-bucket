@@ -1,15 +1,13 @@
 {
-    "version": "0.5.3.0",
+    "version": "0.6.0.0",
     "description": "A Terminal Emulator based on UWP and web technologies. - felixse/FluentTerminal",
     "homepage": "https://github.com/felixse/FluentTerminal",
     "license": "GPL-3.0",
-    "url": "https://github.com/felixse/FluentTerminal/releases/download/0.5.3.0/FluentTerminal.App_0.5.3.0_Test.zip#/install.ms",
-    "hash": "eefd738ac449b8c3e1f1a3f0b0c59b701c267d11ff5610e793b0c7e80a3b79d3",
-    "pre_install": [
-        "7z x -tzip \"$dir\\install.ms\" -o\"$dir\\tmp\""
-    ],
+    "url": "https://github.com/felixse/FluentTerminal/releases/download/0.6.0.0/FluentTerminal.Package_0.6.0.0_Test.zip#/install.zip",
+    "hash": "942c5d55a4183942a00b7cf8c3309dd1092402f5c97a479e7d6b4c0309167ae3",
+    "pre_install": "7z x -tzip \"$dir\\install.ms\" -o\"$dir\\tmp\"",
     "installer": {
-        "script":[
+        "script": [
             "$osversionLookup = @{",
             "    \"5.1.2600\" = \"XP\";",
             "    \"5.1.3790\" = \"2003\";",
@@ -52,7 +50,7 @@
         ]
     },
     "uninstaller": {
-        "script":[
+        "script": [
             "Get-AppxPackage -Name *FluentTerminal* | Remove-AppxPackage -AllUsers",
             "& certutil -delstore TrustedPeople 1ec0504f23d8f58f4b2cbe942f41d279",
             "reg delete \"HKCU\\Software\\Classes\\Directory\\shell\\Open Fluent Terminal here\" /f",
@@ -60,8 +58,8 @@
             "reg delete \"HKCU\\Software\\Classes\\Directory\\LibraryFolder\\shell\\Open Fluent Terminal here\" /f"
         ]
     },
-    "checkver":"github",
+    "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/felixse/FluentTerminal/releases/download/$version/FluentTerminal.App_$version_Test.zip#/install.zip"
+        "url": "https://github.com/felixse/FluentTerminal/releases/download/$version/FluentTerminal.Package_$version_Test.zip#/install.zip"
     }
 }
