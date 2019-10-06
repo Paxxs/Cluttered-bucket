@@ -1,18 +1,18 @@
-﻿{
-    "version": "1.219.1",
+{
+    "version": "1.219.4",
     "description": "哔哩哔哩唧唧PC版",
     "homepage": "http://client.jijidown.com/",
     "notes": "JJDwon need .NET 4.0",
-    "url": "http://clientfile.jijidown.com/PC/WPF/HistoricVersion/WPF_JJDown_v1.219.1.zip",
-    "hash": "011963e36e55c71616ded3db7ba3c3cdf1d063670b78f88a85e32f6a1ca447a3",
-    "extract_dir" :"[WPF]JJDown",
+    "url": "http://clientfile.jijidown.com/PC/WPF/HistoricVersion/WPF_JJDown_v1.219.4.zip",
+    "hash": "a2b7fd34efa60f5a1ff4140788010d4b1b1969d7844f7794871e6b9e3c3532a1",
+    "extract_dir": "[WPF]JJDown",
     "shortcuts": [
         [
             "JiJiDownForWPF.exe",
             "JJDwon"
         ]
     ],
-    "checkver":"JJDown v([\\d\\.]+)",
+    "checkver": "JJDown v([\\d\\.]+)",
     "autoupdate": {
         "url": "http://clientfile.jijidown.com/PC/WPF/HistoricVersion/WPF_JJDown_v$version.zip"
     }
