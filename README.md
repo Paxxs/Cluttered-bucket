@@ -11,6 +11,15 @@ In this repository you will find everything you need to know about creating cust
 - All manifests belong here
 - `.gitkeep` file could be removed after you push your first manifest
 
+### `bin` Folder
+
+Scripts which will save you time while debuging and writing manifests.
+If you need help how to use them just run `Get-Help .\bin\<BINARY>.ps1`.
+
+### `` File
+
+- Also are executed as `pre-commit` hook
+
 ### `.vscode` Folder
 
 Contains all syntax highlighting, code formating, manifest creating tools you could use.
@@ -37,15 +46,18 @@ Contains all syntax highlighting, code formating, manifest creating tools you co
         - `persistCheck`
             - Installer / pre_install script for checking if file is already persisted or need to be created
 
-### `bin` Folder
+### `.github` Folder
 
-Scripts which will save you much time while debuging and writing manifests.
-If you need help how to use them just run `Get-Help .\bin\<BINARY>.ps1`.
+GitHub repository configuration.
 
-### `Scoop-Bucket.Tests.ps1` File
-
-- Test which are executed inside Appveyor pipeline
-- Also are executed as `pre-commit` hook
+- `workflows` folder
+    - [GitHub Actions](https://github.com/features/actions) configuration for automatic issue/PR/updates handling.
+- `CODEOWNERS`
+    - Pull requests will request review for users defined in this file
+- `PULL REQUEST TEMPLATE`
+    - Prefilled pull request types with proper titles
+- `ISSUE TEMPLATE`
+    - The most used issue templates for users to select and prefilled with required information and labels
 
 ### `config files`
 
@@ -57,29 +69,36 @@ If you need help how to use them just run `Get-Help .\bin\<BINARY>.ps1`.
 - `.gitattributes`
     - Simplifying line endings for git
     - No need to configure `auto.clrf` setting on each clone or new workspaces
+- `Bucket.Tests.ps1`
+    - Test which are executed inside Appveyor pipeline
+    - Could be configured as `pre_commit` hook
 
 ## How to use and adopt this bucket
 
 1. Click on `Use this template` to create new repository in your account with same files
-1. Give your bucket in new name inside github project settings
+1. Open project settings and **give your bucket in new name**
 1. Add proper description of repository
     - Information about what type of manifests could be found here
 1. Add `scoop-bucket` tag for repository
-    - Your manifests will be automatically available at <https://scoop.netlify.com/apps/> and <https://scoop.netlify.com/buckets/>
+    - Your manifests will be automatically available at <https://scoop-docs.now.sh/apps/>
 1. Enable appveyor CI/CD
     1. Register / Login to [Appveyor](https://ci.appveyor.com/login)
     1. Click `New Project`
-    1. From Left Panel choose your source control variant (Github)
-    1. From Right Panel choose repository with bucket and click `+ Add`
+    1. From Left Panel, choose your source control variant (Github)
+    1. From Right Panel, choose repository with bucket and click `+ Add`
     1. 🎉 Project created and ready to build 🎉
     1. Get Badge URL
         1. Open Appveyor Project settings
         1. Navigate to Badges
         1. Copy `Branch Sample markdown code` snippet for further usage
-            - Only master branch is better, since you can freely test in other branches and do not mystificate users.
+            - Only master branch is better, since you can freely test in other branches and do not mystificate users
+            - [You could use alternative styles](https://shields.io/category/build#styles)
 1. Clone project into some folder
+    - `git clone https://github.com/USER/REPO.git MyAwesomeBucket`
 1. Open vscode with this clone
-1. Run `git remote add 'upstream' 'https://github.com/Ash258/GenericBucket.git'`
+    - `code MyAwesomeBucket`
+1. Configure remote repository
+    1. `git remote add 'upstream' 'https://github.com/Ash258/GenericBucket.git'`
     - This step will allow you to synchronize changes with this template repository
     - If some changes are pushed into this repository and you want to reflect them into your bucket, you can simply do something like:
         - `git fetch --all`
@@ -90,11 +109,12 @@ If you need help how to use them just run `Get-Help .\bin\<BINARY>.ps1`.
     1. Open `README.template.md`
     1. Replace all `%%templatestring%%` with real and according values
         1. Replace appveyor status badge with yours
-            - See: <https://www.appveyor.com/docs/status-badges/>
+            - See: <https://appveyor.com/docs/status-badges/>
     1. Override this README with completed `README.template.md`
     1. Remove template `README.template.md`
 1. Repository tweaks
-    1. Open `.github\CODEOWNERS` and change `@Ash258` to your github username
+    1. Open `.github\CODEOWNERS` and change `@Ash258` to desired github username
     1. Actions
         1. Open each file in `.github\workflows` and change `youremail@email.com` with your email
-1. 🎉🎉 Everything set. You are ready to write and share manifests. 🎉🎉
+        1. Visit <https://github.com/Ash258/Scoop-GithubActions> for more information
+1. 🎉🎉 Everything set. High Quality bucket is ready for new users 🎉🎉

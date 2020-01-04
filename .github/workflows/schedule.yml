@@ -4,7 +4,7 @@ on:
 name: Excavator
 jobs:
   excavate:
-    name: Excavate
+    name: Excavator
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master

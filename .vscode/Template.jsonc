@@ -1,5 +1,5 @@
 {
-    // region General Information
+    //#region General Information
     "##": "Some general comment for other maintainers",
     "version": "1.0",
     "description": "Meaningful description.",
@@ -11,17 +11,29 @@
     "notes": [ // String or Array Of Strings
         "Some notes shown after installation"
     ],
-    // endregion General Information
-    // region Requirements
-    "depends": "MANIFEST", // String or Array Of Strings
+    //#endregion General Information
+    //#region Requirements
+    // "depends": "MANIFEST",
+    // or Array of string
+    "depends": [
+        "bucket/someManifest",
+        "manifest"
+    ],
     "suggest": {
-        "COSI": "COSI" // String or Array Of Strings
+        "COSI": "COSI"
+        // "Array": [
+        //    "bucket/manifest",
+        //    "manifest",
+        // ]
     },
-    // endregion Requirements
-    // region Downloading
+    //#endregion Requirements
+    //#region Downloading
+    "cookie": {
+        "name": "value"
+    },
     "architecture": { // Or platform specific below (URL, Hash, extract)
         "64bit": {
-            "url": "https://ash258.com", // String or Array Of Strings
+            "url": "https://ash258.com",
             "hash": "899346f9f283a4fd5aa03015a3f58cde5b9c0b6a5c4d64c2cc74e9b22c1348d7",
             "extract_dir": "DIRECTORY INSIDE ARCHIVE"
         },
@@ -40,32 +52,30 @@
             ]
         }
     },
-    // region Downloding
-    "extract_dir": "DIRECTORY", // String or Array Of Strings
-    "extract_to": "WHERE TO PUT EXTRACTED FILES", // String or Array Of Strings
-    // region Installing
+    //#endregion Downloading
+    //#region Extracting
+    "innosetup": true,
+    "extract_dir": "FOLDER",
+    "extract_to": "folder",
+    //#endregion Extracting
+    //#region Installing
     "pre_install": [ // String or Array Of Strings
-        "Run some powershell commands executed before running installer"
+        "Run some powershell commands executed before running installer",
+        "other command"
     ],
     "installer": {
-        "file": "filename.exe", // Not needed to be specified
+        "file": "filename.exe", // Not needed to be specified if installer is downloaded file
         "args": "ARGUMENT" // String or Array Of Strings
     },
-    "post_install": [ // String or Array Of Strings
-        "Some powershell commands executed after running installer"
-    ],
-    // region UnInstalling
+    "post_install": "Some powershell commands executed after running installer",
+    //#region UnInstalling
     "uninstaller": {
         "file": "uninstaller.exe",
         "args": "ARGUMENT" // String or Array Of Strings
     },
-    // endregion UnInstalling
-    // endregion Installing
-    // region Links
-    "persist": [ // String or Array Of Strings
-        "FOLDERTOPERSIST",
-        "FILETOPERSIST.extension"
-    ],
+    //$endregion UnInstalling
+    //#endregion Installing
+    //#region Links
     "bin": [ // String or Array Of Array Of Strings
         "singlebinary.exe",
         [
@@ -82,28 +92,42 @@
             "withOtherName",
             "", // Keep blank if none
             "withOtherIcon.ico"
-        ],
+        ]
     ],
-    "shortcuts": [ // String or Array Of Array Of Strings (same as bin)
+    "shortcuts": [ // String or Array Of Array Of Strings (similar to bin)
         [
             "",
             ""
         ]
     ],
-    "env_add_path": "", // String or Array Of Strings
-    // endregion Links
-    // region Updating
-    // "checkver": "", Match regex inside string on homepage
+    "psmodule": {
+        "name": "moduleName"
+    },
+    "env_add_path": "bin", // String or Array Of Strings
+    "env_set": {
+        "KEY": "value"
+    },
+    "persist": [ // String or Array Of Strings
+        "FOLDERTOPERSIST",
+        "FILETOPERSIST.extension"
+    ],
+    //#endregion Links
+    //#region Updating
+    // "checkver": "regex", Match regex inside string on homepage
+    // "checkver": "github", If homepage is set to github repo
     "checkver": {
         "url": "https://exampleurl.cz",
-        "regex": "REGEXTOMATCH([\\d\\.]+)" // Or JP
+        "jsonpath": "$.cosi",
+        "regex": "REGEXTOMATCH([\\d.]+)",
+        "replace": "$1"
     },
     "autoupdate": {
         "url": "https://ash258.com#/newName.zip",
         "hash": { // Some vendors do not ship hashes 😭
             "url": "https://ash258.com",
-            "find": "REGEXTOFINDONURL"
-        }
+            "regex": "do not write regexes for hash algorithms, use variables ($md5, $sha1, $sha256, $sha512, $checksum)"
+        },
+        "note": "Note after autoupdate"
     }
-    // endregion Updating
+    //#endregion Updating
 }
