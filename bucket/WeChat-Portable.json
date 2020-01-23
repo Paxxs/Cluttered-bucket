@@ -1,9 +1,9 @@
 ﻿{
-    "version": "2.6.8.68",
+    "version": "2.8.0.111",
     "description": "Available for all kinds of platforms; enjoy group chat; support voice/photo/video and text messages.",
     "homepage": "https://www.wechat.com/en",
-    "url": "https://drive.4me.cc/apt-cdn/WeChat/2.6.8.68/WeChat.7z",
-    "hash": "sha1:4c37e763e8789e419b265b2a666cddf660b95010",
+    "url": "https://drive.4me.cc/apt-cdn/WeChat/2.8.0.111/WeChat.7z",
+    "hash": "38C5F84940A1E014DEC8CD9664B4355350FBF2B196569E3923326965AC94659F",
     "persist": "WeChatData",
     "pre_install":[
         "$file = 'WeChatData'",
@@ -26,6 +26,6 @@
     ],
     "checkver":{
         "url": "https://www.nocmd.com/477.html",
-        "regex": "/([\\d.]+)"
+        "regex": "v([\\d.]+)"
     }
 }
