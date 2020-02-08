@@ -3,7 +3,13 @@
     "tasks": [
         {
             "label": "Check version (Whole repository)",
+            "detail": "Execute checkver for each manifests ini each folder inside repository.",
             "type": "shell",
+            "options": {
+                "env": {
+                    "SCOOP_DEBUG": "true",
+                },
+            },
             "command": ".\\bin\\checkver.ps1",
             "args": [
                 "-Recurse",
@@ -21,7 +27,13 @@
         {
             // Default (While opened file, Press CTRL+F9 / CTRL+SHIFT+B)
             "label": "Check and update (Actual)",
+            "detail": "Custom version check with auto commit",
             "type": "shell",
+            "options": {
+                "env": {
+                    "SCOOP_DEBUG": "true",
+                },
+            },
             "command": ".\\bin\\checkAndPush.ps1",
             "args": [
                 "'${file}'",
@@ -46,6 +58,7 @@
         },
         {
             "label": "Test",
+            "detail": "Execute Pester tests in repository root directory.",
             "type": "shell",
             "command": ".\\bin\\test.ps1",
             "presentation": {
@@ -60,6 +73,7 @@
         },
         {
             "label": "Missing Checkver",
+            "detail": "Check if manifests have checkver and autoupdate properties.",
             "type": "shell",
             "command": ".\\bin\\missing-checkver.ps1; .\\bin\\missing-checkver.ps1 -dir \"TODO\"",
             "presentation": {
@@ -74,7 +88,13 @@
         },
         {
             "label": "Push Auto-PR",
+            "detail": "Execute checkver and push updated manifests.",
             "type": "shell",
+            "options": {
+                "env": {
+                    "SCOOP_DEBUG": "true",
+                },
+            },
             "command": ".\\bin\\auto-pr.ps1",
             "args": [
                 "-Push",
@@ -91,7 +111,13 @@
         },
         {
             "label": "Checkver Actual",
+            "detail": "Check version of currently opened manifest.",
             "type": "shell",
+            "options": {
+                "env": {
+                    "SCOOP_DEBUG": "true",
+                },
+            },
             "command": ".\\bin\\checkver.ps1",
             "args": [
                 "-App",
@@ -110,9 +136,40 @@
             "problemMatcher": [],
         },
         {
-            "label": "Purge Uninstall Actual",
-            "detail": "Test manifest uninstallation",
+            "label": "Checkhashes Actual",
+            "detail": "Check hashes of currently opened manifest.",
             "type": "shell",
+            "options": {
+                "env": {
+                    "SCOOP_DEBUG": "true",
+                },
+            },
+            "command": ".\\bin\\checkhashes.ps1",
+            "args": [
+                "-App",
+                "'${fileBasenameNoExtension}'",
+                "-Dir",
+                "'${relativeFileDirname}'",
+                "-Force",
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+            },
+            "problemMatcher": [],
+        },
+        {
+            "label": "Purge Uninstall Actual",
+            "detail": "Uninstall currently opened manifest and remove persisted data.",
+            "type": "shell",
+            "options": {
+                "env": {
+                    "SCOOP_DEBUG": "true",
+                },
+            },
             "command": "scoop",
             "args": [
                 "uninstall",
@@ -130,8 +187,13 @@
         },
         {
             "label": "Install Actual",
-            "detail": "Test manifest installation",
+            "detail": "Install currently opened manifest.",
             "type": "shell",
+            "options": {
+                "env": {
+                    "SCOOP_DEBUG": "true",
+                },
+            },
             "command": "scoop",
             "args": [
                 "install",
@@ -148,7 +210,13 @@
         },
         {
             "label": "ReInstall Actual",
+            "detail": "Uninstall (--purge) and install currently opened manifest.",
             "type": "shell",
+            "options": {
+                "env": {
+                    "SCOOP_DEBUG": "true",
+                },
+            },
             "dependsOn": [
                 "Purge Uninstall Actual",
                 "Install Actual",
@@ -165,8 +233,13 @@
         },
         {
             "label": "Force Update Actual",
-            "detail": "Test manifest update process",
+            "detail": "Update currently opened manifest.",
             "type": "shell",
+            "options": {
+                "env": {
+                    "SCOOP_DEBUG": "true",
+                },
+            },
             "command": "scoop",
             "args": [
                 "update",

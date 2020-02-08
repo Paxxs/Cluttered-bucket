@@ -3,12 +3,12 @@
     Check hashes of all URLs inside manifest.
 .DESCRIPTION
     Check hashes of all URLs inside manifest.
-    Script will download every URL and then calculate hash of it.
+    Script will download every URL and then calculate hash of them.
 .PARAMETER Manifest
-    Manifest to be checked.
+    Specify the name of manifest to be checked.
     Placeholders are supported.
 .PARAMETER Dir
-    Directory, where to look for manifests
+    Specify the directory with manifests.
     Default to bucket folder.
 .PARAMETER Rest
     -u - Update hashes if there are mismatched ones.
@@ -35,7 +35,7 @@
 #>
 param(
     [Parameter(ValueFromPipeline = $true)]
-    [Alias('App')]
+    [Alias('App', 'Name')]
     [String[]] $Manifest = '*',
     [ValidateScript( { if ( Test-Path $_ -Type Container) { $true } else { $false } })]
     [String] $Dir = "$PSScriptRoot\..\bucket",
@@ -48,7 +48,10 @@ param(
 begin {
     . "$PSScriptRoot\Helpers.ps1"
 
-    if (-not $env:SCOOP_HOME) { $env:SCOOP_HOME = Resolve-Path (scoop prefix scoop) }
+    if (-not $env:SCOOP_HOME) {
+        if (-not (Get-Command 'scoop' -ErrorAction SilentlyContinue)) { throw 'Scoop installation or SCOOP_HOME environment is required' }
+        $env:SCOOP_HOME = scoop prefix scoop | Resolve-Path
+    }
     $Dir = Resolve-Path $Dir
     $Script = "$env:SCOOP_HOME\bin\checkhashes.ps1"
     $Rest = ($Rest | Select-Object -Unique) -join ' '
