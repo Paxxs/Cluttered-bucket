@@ -1,0 +1,38 @@
+{
+    "version": "9.1.5.25530",
+    "description": "基于官方数字签名为2019年3月7日的 QQ 9.1.0 (24712) 正式版制作，拥有“一键切换组件”功能 (V4)",
+    "homepage": "https://github.com/Paxxs/GreenQ",
+    "notes": "安装前请先自备安装好最新版本 Visual C++ 2017 和 Universal C 运行库！否则安装过程中会报错，QQ 也可能会不能正常启动",
+    "url": "https://drive.4me.cc/apt-cdn/QQ/9.1.5.25530/QQ.7z",
+    "hash": "ff43abee261bad2576d2d0e07d62444f4f485a23ecdca71c425811af30ab573d",
+    "installer": {
+        "script": [
+            "If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] \"Administrator\")){",
+                "    abort \"ERROR: install require UAC. Please try again.\"",
+                "}",
+            "Start-Process \"$dir\\install.bat\" -Wait"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] \"Administrator\")){",
+                "    abort \"ERROR: uninstall require UAC. Please try again.\"",
+                "}",
+            "Start-Process \"$dir\\uinstall.bat\" -Wait"
+        ]
+    },
+    "shortcuts": [
+        [
+            "Bin/QQScLauncher.exe",
+            "腾讯QQ"
+        ],
+        [
+            "settings.bat",
+            "配置QQ"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://drive.4me.cc/apt-cdn/QQ/$version/QQ.7z"
+    }
+}

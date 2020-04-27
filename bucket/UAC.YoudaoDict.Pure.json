@@ -1,0 +1,22 @@
+{
+    "version": "8.5.3",
+    "description": "YoudaoDict is a all-round translation software.",
+    "homepage": "https://cidian.youdao.com/",
+    "license": "Shareware",
+    "url": "https://drive.4me.cc/apt-cdn/YoudaoDict/Pure/8.5.3/YoudaoDict_Pure_Ver.6.6.4(8.5.3).exe#/installer.exe",
+    "hash": "sha1:8622E66084064D731C17F8E0F7C76E86D43AAD7C",
+    "installer": {
+        "file": "installer.exe",
+        "args": [
+            "/S",
+            "/D=$dir"
+        ]
+    },
+    "uninstaller": {
+        "script": "Start-Process \"$dir\\Application\\Uninst.exe\" -Args /S -Wait"
+    },
+    "checkver": {
+        "url": "http://ys-e.ys168.com/598850037/liqRqkl7W3I4H745QM4/Readme.txt",
+        "regex": "([\\d.]+)\\s"
+    }
+}
