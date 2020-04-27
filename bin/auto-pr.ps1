@@ -4,17 +4,17 @@
 .DESCRIPTION
     Updates manifests and pushes them to directly the master branch or creates pull-requests for upstream.
 .PARAMETER Manifest
-    Manifest to be updated.
+    Specify manifest to be updated.
 .PARAMETER Dir
-    Where to search for manifests.
+    Specify directory with manifests.
 .PARAMETER Upstream
-    Upstream repository with target branch.
+    Specify upstream repository with target branch.
 .PARAMETER Push
-    Push updates directly to 'origin master'.
+    Specify if updates should be directly pushed to 'origin master'.
 .PARAMETER Request
-    Create pull-requests on 'upstream master' for each update.
+    Specify if pull-requests should be created on 'upstream master' for each manifest.
 .PARAMETER SpecialSnowflakes
-    List of manifests, which should be updated allways. (Force updated)
+    Specify list of manifests, which should be force updated.
 #>
 param(
     [Alias('App', 'Name')]
@@ -29,11 +29,13 @@ param(
 )
 
 begin {
-    if (-not $env:SCOOP_HOME) { $env:SCOOP_HOME = Resolve-Path (scoop prefix scoop) }
-    $Dir = Resolve-Path $Dir
+    if (-not $env:SCOOP_HOME) {
+        if (-not (Get-Command 'scoop' -ErrorAction SilentlyContinue)) { throw 'Scoop installation or SCOOP_HOME environment is required' }
+        $env:SCOOP_HOME = scoop prefix scoop | Resolve-Path
+    }
     $Params = @{
         App               = $Manifest
-        Dir               = $Dir
+        Dir               = Resolve-Path $Dir
         Upstream          = $Upstream
         Push              = $Push
         Request           = $Request
@@ -42,6 +44,6 @@ begin {
     }
 }
 
-process { . "$env:SCOOP_HOME\bin\auto-pr.ps1" @Params }
+process { & "$env:SCOOP_HOME\bin\auto-pr.ps1" @Params }
 
 end { Write-Host 'DONE' -ForegroundColor Yellow }
