@@ -1,9 +1,9 @@
 {
-    "version": "6.21",
+    "version": "6.23",
     "description": "软媒魔方，Windows系统增强辅助工具",
     "homepage": "https://mofang.ruanmei.com/",
-    "url": "https://d.ruanmei.com/pcmaster/pcmaster_6.21_full.zip",
-    "hash": "b736b3265f249e00d29266346f6f47bdb76f04d1c9d1fe7f8fd6900acb554c21",
+    "url": "https://d.ruanmei.com/pcmaster/pcmaster_6.23_full.zip",
+    "hash": "1d92f9476a75ec31c97495fa085714292b158df53fc603b5de83f6fdabd08adb",
     "extract_dir": "PCMaster",
     "shortcuts": [
         [
