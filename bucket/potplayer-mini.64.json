@@ -7,8 +7,8 @@
         "url": "https://potplayer.daum.net/publicRelation"
     },
     "url":[
-        "https://drive.4me.cc/apt-cdn/PotPlayer/20190731_1.7.19955/PotPlayerSetup64.exe#/cosi.7z",
-        "https://drive.4me.cc/apt-cdn/PotPlayer/20190731_1.7.19955/OpenCodecSetup64.exe#/codec.7z"
+        "https://list.nb.gl/OD_scoop/apt-cdn/PotPlayer/20190731_1.7.19955/PotPlayerSetup64.exe#/cosi.7z",
+        "https://list.nb.gl/OD_scoop/apt-cdn/PotPlayer/20190731_1.7.19955/OpenCodecSetup64.exe#/codec.7z"
     ],
     "hash":[
         "3df6733831c302b31cf43bd6fb12745644ee32a85bff7314a45bc271b9725c6a",
@@ -97,7 +97,7 @@
         "Playlist",
         "PotPlayerMini64.ini"
     ],
-    "notes": "Potplay Skins: https://drive.4me.cc/apt-cdn/PotPlayer/Skins",
+    "notes": "Potplay Skins: https://list.nb.gl/OD_scoop/apt-cdn/PotPlayer/Skins",
     "checkver": {
         "url": "https://potplayer.daum.net/update.html?lang=en&bit",
         "regex": "\\[([\\d.]+)\\]\\s+(?<year>\\d{4})/(?<month>\\d{2})/(?<day>\\d{2})"

@@ -7,9 +7,9 @@
     },
     "notes":"It's better to run with administrator privilleges.(use 'sudo scoop install xxx')",
     "url": [
-        "https://drive.4me.cc/apt-cdn/PDFelement/7.0.3.4309/pdfelement-pro_full-7.0.3.4309.exe#/install.exe",
-        "https://drive.4me.cc/apt-cdn/PDFelement/7.0.3.4309/PEStudio.PDFElement.Base.dll#/base.dll",
-        "https://drive.4me.cc/apt-cdn/PDFelement/7.0.3.4309/pdfelement7-ocrv12.exe#/ocr.exe"
+        "https://list.nb.gl/OD_scoop/apt-cdn/PDFelement/7.0.3.4309/pdfelement-pro_full-7.0.3.4309.exe#/install.exe",
+        "https://list.nb.gl/OD_scoop/apt-cdn/PDFelement/7.0.3.4309/PEStudio.PDFElement.Base.dll#/base.dll",
+        "https://list.nb.gl/OD_scoop/apt-cdn/PDFelement/7.0.3.4309/pdfelement7-ocrv12.exe#/ocr.exe"
     ],
     "hash": [
         "a9be927a8a0639ecad44ccecdbf454a7b56e1e40c223e025c42d8d9f9adb6458",

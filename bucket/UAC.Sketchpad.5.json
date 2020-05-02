@@ -7,7 +7,7 @@
         "组件安装等选项可以自选",
         "但请不要选 ‘完美导航’ 组件，会执行修改浏览器默认主页等未知操作！"
     ],
-    "url": "https://drive.4me.cc/apt-cdn/Sketchpad/5.0.6.0/Sketchpad.exe#/installer.exe",
+    "url": "https://list.nb.gl/OD_scoop/apt-cdn/Sketchpad/5.0.6.0/Sketchpad.exe#/installer.exe",
     "hash": "sha1:9EB4392865520B3C5444F838ADF95080A2BDD423",
     "pre_install":[
         "Write-Host \"--组件安装等选项可以自选--\" -ForegroundColor Green",
