@@ -98,8 +98,5 @@
     "checkver": {
         "url": "https://www.ldplayer.net/app/blog/the-history-version-of-ldplayer.html",
         "re": "LDPlayer_([\\d.]+).exe"
-    },
-    "autoupdate": {
-        "url": "https://encdn.ldmnq.com/download/en/LDPlayer_$version.exe#/dl.7z"
     }
 }

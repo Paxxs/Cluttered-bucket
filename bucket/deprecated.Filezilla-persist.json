@@ -53,19 +53,5 @@
     "checkver": {
         "url": "https://filezilla-project.org/download.php?show_all=1",
         "re": "The latest stable version of FileZilla Client is ([\\d.]+)"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://download.filezilla-project.org/client/FileZilla_$version_win64.zip"
-            },
-            "32bit": {
-                "url": "https://download.filezilla-project.org/client/FileZilla_$version_win32.zip"
-            }
-        },
-        "hash": {
-            "url": "$baseurl/FileZilla_$version.sha512"
-        },
-        "extract_dir": "FileZilla-$version"
     }
 }
