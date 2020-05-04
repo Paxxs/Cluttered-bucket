@@ -1,13 +1,13 @@
 {
-    "version": "1.2.5",
+    "version": "1.2.6",
     "description": "一个基于20-20-20规则的用眼休息提醒软件（Windows），帮助你保持健康的工作状态，追踪每天的用眼数据。",
     "homepage": "https://github.com/Planshit/ProjectEye",
     "license": {
         "identifier": "MIT"
     },
     "notes": "Runtime:.NET Framework 4.5+",
-    "url": "https://github.wuyanzheshui.workers.dev/Planshit/ProjectEye/releases/download/1.2.5/ProjectEye.zip",
-    "hash": "5363e8d3aa10ef4f5f15ebf373c8ff2b5dea5f30921e94bf0746783313420da8",
+    "url": "https://github.wuyanzheshui.workers.dev/Planshit/ProjectEye/releases/download/1.2.6/ProjectEye.zip",
+    "hash": "66fb9a45120280fa5b40072c49605b168aeb04ca3e4df4c27ed2132b1d4b8b31",
     "bin": "ProjectEye.exe",
     "shortcuts": [
         [
@@ -15,13 +15,13 @@
             "ProjectEye"
         ]
     ],
-    "post_install":[
+    "post_install": [
         "if (Test-Path $dir/ProjectEyeUp.exe) {",
         "    Write-Host \":: delete update.exe\"",
         "    Remove-Item \"$dir\\ProjectEyeUp.exe\" -Force -Recurse",
         "}"
     ],
-    "persist":[
+    "persist": [
         "Data",
         "UI"
     ],
