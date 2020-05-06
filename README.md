@@ -49,6 +49,8 @@ or
 | [Filezilla-优化持久化版^deprecated:停止维护^ **(deprecated.Filezilla-persist)**](./bucket/deprecated.Filezilla-persist.json) |   ✔️    |    ❌     |       ❌(❌)        |    ✔️     |
 | [雷电安卓模拟器en^deprecated:停止维护^ **(deprecated.LDPlayer.clear)**](./bucket/deprecated.LDPlayer.clear.json)             |   🎉🔶   |    ❌     |       ❌(❌)        |    ✔️     |
 | [ ProjectEye **(ProjectEye)**](./bucket/ProjectEye.json)                                                                     |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [ mellow **(mellow)**](./bucket/mellows.json)                                                                                |   ✔️🎃   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [ keeweb^下载加速^ **(keeweb_mirror)**](./bucket/keeweb_mirror.json)                                                         |   ✔️    |    ✔️     |       ✔️(✔️)        |    ✔️     |
 | [ **()**](./bucket/.json)                                                                                                    |        |          |                   |          |
 
 - ✔️ Yes
