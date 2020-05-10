@@ -50,7 +50,7 @@ or
 | [雷电安卓模拟器en^deprecated:停止维护^ **(deprecated.LDPlayer.clear)**](./bucket/deprecated.LDPlayer.clear.json)             |   🎉🔶   |    ❌     |       ❌(❌)        |    ✔️     |
 | [ ProjectEye **(ProjectEye)**](./bucket/ProjectEye.json)                                                                     |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ mellow **(mellow)**](./bucket/mellows.json)                                                                                |   ✔️🎃   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
-| [ keeweb^下载加速^ **(keeweb_mirror)**](./bucket/keeweb_mirror.json)                                                         |   ✔️    |    ✔️     |       ✔️(✔️)        |    ✔️     |
+| [ winxcorners **(winxcorners)**](./bucket/winxcorners.json)                                                                                                    |    ✔️🛠    |      🛠    |      🛠(⛔️)             |    ✔️      |
 | [ **()**](./bucket/.json)                                                                                                    |        |          |                   |          |
 
 - ✔️ Yes
