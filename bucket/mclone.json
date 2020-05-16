@@ -1,0 +1,24 @@
+{
+    "version": "1.1.0",
+    "description": "麻麻再也不用担心拉取GitHub代码慢了",
+    "homepage": "https://github.com/nulastudio/mclone",
+    "license": {
+        "identifier": "MIT"
+    },
+    "notes": "请不要使用mclone拉取私有仓库",
+    "url": "https://liesauer.coding.net/p/mclone/d/mclone/git/raw/v1.1.0/win-x86.exe#/mclone.exe",
+    "hash": "409686c6b50a4a9078941865c34849562811fabad076145f9c08aa5cb7a9c256",
+    "depends": "git",
+    "post_install": [
+        "$save=\"$dir\\mclone.exe\"",
+        "$Save = $Save.Replace(\"\\\", \"\\\\\").Replace(\" \", \"\\ \")",
+        "git config --global alias.mclone \"!${Save}\""
+    ],
+    "uninstaller": {
+        "script": "git config --global --unset alias.mclone"
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://liesauer.coding.net/p/mclone/d/mclone/git/raw/v$version/win-x86.exe#/mclone.exe"
+    }
+}

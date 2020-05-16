@@ -51,6 +51,7 @@ or
 | [ ProjectEye **(ProjectEye)**](./bucket/ProjectEye.json)                                                                     |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ mellow **(mellow)**](./bucket/mellows.json)                                                                                |   ✔️🎃   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ winxcorners **(winxcorners)**](./bucket/winxcorners.json)                                                                                                    |    ✔️🛠    |      🛠    |      🛠(⛔️)             |    ✔️      |
+| [ mclone **(mclone)**](./bucket/mclone.json)                                                                                                    |    ✔️    |     ✔️     |       ✔️(⛔️)            |      ✔️    |
 | [ **()**](./bucket/.json)                                                                                                    |        |          |                   |          |
 
 - ✔️ Yes
