@@ -4,7 +4,7 @@
 
 or
 
-`xxx bucket add MorFans-apt 'https://v2.github.codeku.me/Paxxs/Cluttered-bucket.git'`
+`xxx bucket add MorFans-apt 'https://github.com.cnpmjs.org/Paxxs/Cluttered-bucket.git'`
 
 ## Manifests
 
@@ -50,8 +50,9 @@ or
 | [雷电安卓模拟器en^deprecated:停止维护^ **(deprecated.LDPlayer.clear)**](./bucket/deprecated.LDPlayer.clear.json)             |   🎉🔶   |    ❌     |       ❌(❌)        |    ✔️     |
 | [ ProjectEye **(ProjectEye)**](./bucket/ProjectEye.json)                                                                     |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ mellow **(mellow)**](./bucket/mellows.json)                                                                                |   ✔️🎃   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
-| [ winxcorners **(winxcorners)**](./bucket/winxcorners.json)                                                                                                    |    ✔️🛠    |      🛠    |      🛠(⛔️)             |    ✔️      |
-| [ mclone **(mclone)**](./bucket/mclone.json)                                                                                                    |    ✔️    |     ✔️     |       ✔️(⛔️)            |      ✔️    |
+| [ winxcorners **(winxcorners)**](./bucket/winxcorners.json)                                                                  |   ✔️🛠   |    🛠     |       🛠(⛔️)        |    ✔️     |
+| [ mclone **(mclone)**](./bucket/mclone.json)                                                                                 |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [ LightProxy **(LightProxy)**](./bucket/LightProxy.json)                                                                     |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ **()**](./bucket/.json)                                                                                                    |        |          |                   |          |
 
 - ✔️ Yes
