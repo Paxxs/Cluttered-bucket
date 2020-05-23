@@ -53,6 +53,7 @@ or
 | [ winxcorners **(winxcorners)**](./bucket/winxcorners.json)                                                                  |   ✔️🛠   |    🛠     |       🛠(⛔️)        |    ✔️     |
 | [ mclone **(mclone)**](./bucket/mclone.json)                                                                                 |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ LightProxy **(LightProxy)**](./bucket/LightProxy.json)                                                                     |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [ PowerToys **(UAC.PowerToys)**](./bucket/UAC.PowerToys.json)                                                                |   ✔️🎃   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ **()**](./bucket/.json)                                                                                                    |        |          |                   |          |
 
 - ✔️ Yes
