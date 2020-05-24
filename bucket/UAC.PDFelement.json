@@ -61,5 +61,5 @@
             "Remove-Item \"HKLM:\\SOFTWARE\\WOW6432Node\\Wondershare\" -Force -Recurse"
         ]
     },
-    "checkver": "PDFelement Pro ([\\d.]+)"
+    "checkver": "v([\\d.]+)"
 }

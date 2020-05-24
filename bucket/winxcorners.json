@@ -1,5 +1,5 @@
 {
-    "version": "1.2.1b",
+    "version": "1.2.1",
     "description": "Hot corners for Windows 10",
     "homepage": "https://github.com/vhanla/winxcorners",
     "license": {
@@ -17,6 +17,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.wuyanzheshui.workers.dev/vhanla/winxcorners/releases/download/$version/WinXCornersRegistryFix.zip"
+        "url": "https://github.wuyanzheshui.workers.dev/vhanla/winxcorners/releases/download/$versionb/WinXCornersRegistryFix.zip"
     }
 }
