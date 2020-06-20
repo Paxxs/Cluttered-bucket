@@ -16,9 +16,10 @@ In this repository you will find everything you need to know about creating cust
 Scripts which will save you time while debuging and writing manifests.
 If you need help how to use them just run `Get-Help .\bin\<BINARY>.ps1`.
 
-### `` File
+### `Bucket.Tests.ps1` File
 
-- Also are executed as `pre-commit` hook
+- Test which are executed inside Appveyor pipeline
+- Could be configured as `pre_commit` hook
 
 ### `.vscode` Folder
 
@@ -51,7 +52,8 @@ Contains all syntax highlighting, code formating, manifest creating tools you co
 GitHub repository configuration.
 
 - `workflows` folder
-    - [GitHub Actions](https://github.com/features/actions) configuration for automatic issue/PR/updates handling.
+    - Linux (legacy) version [GitHub Actions](https://github.com/features/actions) configuration for automatic issue/PR/updates handling.
+    - Windows version of actions could be used for better and future proof implementation (see <https://github.com/Ash258/Scoop-GithubActions/tree/master-win> for updated configs)
 - `CODEOWNERS`
     - Pull requests will request review for users defined in this file
 - `PULL REQUEST TEMPLATE`
