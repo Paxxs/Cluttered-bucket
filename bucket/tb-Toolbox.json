@@ -14,7 +14,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.weidown.com/xiazai/1437.html",
+        "url": "http://www.weidown.com/xiazai/1437.html",
         "regex": "(\\d{4}\\.\\d{2})"
     }
 }
