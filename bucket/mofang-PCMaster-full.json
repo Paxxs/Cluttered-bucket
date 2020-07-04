@@ -44,7 +44,11 @@
         ],
         [
             "softmaster.exe",
-            "软媒\\软媒软件管家"
+            "软媒\\软件管家(软媒)"
+        ],
+        [
+            "ramdisk.exe",
+            "软媒\\内存盘(ramdisk)"
         ]
     ],
     "checkver": "pcmaster_(\\d+\\.+\\d+)_full",
