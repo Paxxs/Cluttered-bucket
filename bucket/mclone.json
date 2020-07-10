@@ -1,13 +1,13 @@
 {
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "麻麻再也不用担心拉取GitHub代码慢了",
     "homepage": "https://github.com/nulastudio/mclone",
     "license": {
         "identifier": "MIT"
     },
     "notes": "请不要使用mclone拉取私有仓库",
-    "url": "https://liesauer.coding.net/p/mclone/d/mclone/git/raw/v1.2.0/win-x86.exe#/mclone.exe",
-    "hash": "c9c73a1cfc77df4e7e544a50e401c95a2e7a7304c259a0a4ae47d78fcc8054f9",
+    "url": "https://liesauer.coding.net/p/mclone/d/mclone/git/raw/v1.3.0/win-x86.exe#/mclone.exe",
+    "hash": "d9060e27032b6b6fbe9477a553d43de2eda4cebe06fd0df98d01bd209adba9fd",
     "depends": "git",
     "post_install": [
         "$save=\"$dir\\mclone.exe\"",
