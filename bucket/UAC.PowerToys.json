@@ -1,5 +1,5 @@
 {
-    "version": "0.19.1",
+    "version": "0.19.2",
     "description": "Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity. Inspired by the Windows 95 era PowerToys project, this reboot provides power users with ways to squeeze more efficiency out of the Windows 10 shell and customize it for individual workflows.",
     "homepage": "https://github.com/microsoft/PowerToys",
     "license": {
@@ -7,8 +7,8 @@
     },
     "notes": "",
     "depends": "dotnet-desktop-runtime",
-    "url": "https://github.wuyanzheshui.workers.dev/microsoft/PowerToys/releases/download/v0.19.1/PowerToysSetup-0.19.1-x64.msi#/in",
-    "hash": "08a44c5a79c6f22665dc5f015f8ec3a1b2248c68695c4b917c671d1e8264fa03",
+    "url": "https://github.wuyanzheshui.workers.dev/microsoft/PowerToys/releases/download/v0.19.2/PowerToysSetup-0.19.2-x64.msi#/in",
+    "hash": "eae7c5374be2a354bf0ce2345043f9170c6cd6a9f67900ad147fd33f107528b8",
     "installer": {
         "script": [
             "If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] \"Administrator\")){",
