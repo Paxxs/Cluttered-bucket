@@ -1,12 +1,12 @@
 {
-    "version": "1.1.29",
+    "version": "1.1.30",
     "description": "Cross platform Web debugging proxy",
     "homepage": "https://github.com/alibaba/lightproxy",
     "license": {
         "identifier": "Apache-2.0"
     },
-    "url": "https://github.wuyanzheshui.workers.dev/alibaba/lightproxy/releases/download/v1.1.29/LightProxy-Setup-1.1.29.exe#/dl.7z",
-    "hash": "b75378795a6064c67ff4cc075db9753d1898a83bc988d3d04ba308c70640b530",
+    "url": "https://github.wuyanzheshui.workers.dev/alibaba/lightproxy/releases/download/v1.1.30/LightProxy-Setup-1.1.30.exe#/dl.7z",
+    "hash": "fe87cc2c5f7879d575d033b266050a09814e72016254c0cca55fa96569e8db6c",
     "extract_dir": "$PLUGINSDIR",
     "installer": {
         "script": [
