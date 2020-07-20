@@ -57,6 +57,8 @@ or
 | [中国软件拦截器 **(Malware-Patch)**](./bucket/Malware-Patch.json)                                                            |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [酷安PC版 **(Flutter-Coolapk)**](./bucket/Flutter-Coolapk.json)                                                              |   ✔️    |    ✔️     |       ❌ (❌)       |    ✔️     |
 | [远程app管理工具 **(RemoteApp-Tool)**](./bucket/RemoteApp-Tool.json)                                                         |   ✔️    |    ✔️     |       ❌ (❌)       |    ✔️     |
+| [RDP Wrapper **(UAC.RDP-Wrapper)**](./bucket/UAC.RDP-Wrapper.json)                                                           |   ✔️✋   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [RDP Wrapper 自动更新配置版 **(UAC.RDP-Wrapper-AutoUpdate)**](./bucket/UAC.RDP-Wrapper-AutoUpdate.json)                          |  🎉✋🛠   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ **()**](./bucket/.json)                                                                                                    |        |          |                   |          |
 
 - ✔️ Yes
