@@ -56,6 +56,7 @@ or
 | [ PowerToys **(UAC.PowerToys)**](./bucket/UAC.PowerToys.json)                                                                |   ✔️🎃   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [中国软件拦截器 **(Malware-Patch)**](./bucket/Malware-Patch.json)                                                            |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [酷安PC版 **(Flutter-Coolapk)**](./bucket/Flutter-Coolapk.json)                                                              |   ✔️    |    ✔️     |       ❌ (❌)       |    ✔️     |
+| [远程app管理工具 **(RemoteApp-Tool)**](./bucket/RemoteApp-Tool.json)                                                         |   ✔️    |    ✔️     |       ❌ (❌)       |    ✔️     |
 | [ **()**](./bucket/.json)                                                                                                    |        |          |                   |          |
 
 - ✔️ Yes
