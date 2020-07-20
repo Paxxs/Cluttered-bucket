@@ -54,6 +54,7 @@ or
 | [ mclone **(mclone)**](./bucket/mclone.json)                                                                                 |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ LightProxy **(LightProxy)**](./bucket/LightProxy.json)                                                                     |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ PowerToys **(UAC.PowerToys)**](./bucket/UAC.PowerToys.json)                                                                |   ✔️🎃   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [中国软件拦截器 **(Malware-Patch)**](./bucket/Malware-Patch.json)                                                            |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ **()**](./bucket/.json)                                                                                                    |        |          |                   |          |
 
 - ✔️ Yes
