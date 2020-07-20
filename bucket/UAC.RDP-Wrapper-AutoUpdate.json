@@ -21,7 +21,7 @@
             "    abort \"ERROR: install require UAC. Please try again.\"",
             "}",
             "write-host \"替换更新脚本...\"",
-            "Remove-Item -Path \"autoupdate.bat\"",
+            "Remove-Item -Path \"$dir\\autoupdate.bat\"",
             "Rename-Item -Path \"$dir\\auto.bat\" -NewName \"autoupdate.bat\"",
             "write-host \"复制程序文件...\"",
             "New-Item -Type Directory -Path \"$env:ProgramFiles\\RDP Wrapper\"",
