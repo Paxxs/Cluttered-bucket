@@ -55,6 +55,7 @@ or
 | [ LightProxy **(LightProxy)**](./bucket/LightProxy.json)                                                                     |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ PowerToys **(UAC.PowerToys)**](./bucket/UAC.PowerToys.json)                                                                |   ✔️🎃   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [中国软件拦截器 **(Malware-Patch)**](./bucket/Malware-Patch.json)                                                            |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [酷安PC版 **(Flutter-Coolapk)**](./bucket/Flutter-Coolapk.json)                                                              |   ✔️    |    ✔️     |       ❌ (❌)       |    ✔️     |
 | [ **()**](./bucket/.json)                                                                                                    |        |          |                   |          |
 
 - ✔️ Yes
