@@ -7,7 +7,7 @@ jobs:
     name: Pull Request Validator
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@main
     - name: Pull Request Validation
       uses: Ash258/Scoop-GithubActions@stable
       env:
