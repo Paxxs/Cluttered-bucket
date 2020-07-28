@@ -1,12 +1,12 @@
 {
-    "version": "1.4-293",
+    "version": "1.4-294",
     "description": "KDE Connect is a project that enables all your devices to communicate with each other.",
     "homepage": "https://binary-factory.kde.org/view/Windows%2064-bit/job/kdeconnect-kde_Release_win64/",
     "license": {
         "identifier": "GPLv2"
     },
-    "url": "https://binary-factory.kde.org/view/Windows%2064-bit/job/kdeconnect-kde_Release_win64/lastSuccessfulBuild/artifact/kdeconnect-kde-1.4-293-windows-msvc2019_64-cl.exe#/installer.exe",
-    "hash": "f378255a4652bb2086488b563b3d48bcf89da4f0fa26ed19bd48394a65bb696c",
+    "url": "https://binary-factory.kde.org/view/Windows%2064-bit/job/kdeconnect-kde_Release_win64/lastSuccessfulBuild/artifact/kdeconnect-kde-1.4-294-windows-msvc2019_64-cl.exe#/installer.exe",
+    "hash": "a1a0f6e1b0be5666946cb671b5266b0c5aaf2075e0a6fe78f316eab6c7f133f0",
     "pre_install": [
         "If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] \"Administrator\")){",
         "    abort \"ERROR: installer require UAC. Please try again.\"",
