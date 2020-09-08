@@ -58,7 +58,9 @@ or
 | [酷安PC版 **(Flutter-Coolapk)**](./bucket/Flutter-Coolapk.json)                                                              |   ✔️    |    ✔️     |       ❌ (❌)       |    ✔️     |
 | [远程app管理工具 **(RemoteApp-Tool)**](./bucket/RemoteApp-Tool.json)                                                         |   ✔️    |    ✔️     |       ❌ (❌)       |    ✔️     |
 | [RDP Wrapper **(UAC.RDP-Wrapper)**](./bucket/UAC.RDP-Wrapper.json)                                                           |   ✔️✋   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
-| [RDP Wrapper 自动更新配置版 **(UAC.RDP-Wrapper-AutoUpdate)**](./bucket/UAC.RDP-Wrapper-AutoUpdate.json)                          |  🎉✋🛠   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [RDP Wrapper 自动更新配置版 **(UAC.RDP-Wrapper-AutoUpdate)**](./bucket/UAC.RDP-Wrapper-AutoUpdate.json)                      |  🎉✋🛠   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [PanDownload卢本伟修改版 **(WXQQ_RevokeMsgPatcher)**](./bucket/WXQQ_RevokeMsgPatcher.json)                                   |   ✔️🔶    |    ✔️     |       ✔️(⛔️)        |    ❌     |
+| [微信QQ防撤回补丁 **(WXQQ_RevokeMsgPatcher)**](./bucket/WXQQ_RevokeMsgPatcher.json)                                          |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ **()**](./bucket/.json)                                                                                                    |        |          |                   |          |
 
 - ✔️ Yes
