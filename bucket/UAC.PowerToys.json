@@ -1,5 +1,5 @@
 {
-    "version": "0.21.1",
+    "version": "0.23.0",
     "description": "Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity. Inspired by the Windows 95 era PowerToys project, this reboot provides power users with ways to squeeze more efficiency out of the Windows 10 shell and customize it for individual workflows.",
     "homepage": "https://github.com/microsoft/PowerToys",
     "license": {
@@ -7,16 +7,15 @@
     },
     "notes": "",
     "depends": "dotnet-desktop-runtime",
-    "url": "https://github.wuyanzheshui.workers.dev/microsoft/PowerToys/releases/download/v0.21.1/PowerToysSetup-0.21.1-x64.msi#/in",
-    "hash": "ef63a70fc1c4b718410d3129d1691ab3814b4f7d1cea402e6507b0133ca2f09c",
+    "url": "https://github.wuyanzheshui.workers.dev/microsoft/PowerToys/releases/download/v0.23.0/PowerToysSetup-0.23.0-x64.exe#/install.exe",
+    "hash": "93a9239f29bad72a27c47c032e21c5e01b47bb2b2f0476a93bee7d6bfe882f78",
     "installer": {
         "script": [
             "If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] \"Administrator\")){",
             "    abort \"ERROR: install require UAC. Please try again.\"",
             "}",
-            "Rename-Item $dir\\in in.msi",
-            "Start-Process $dir\\in.msi -ArgumentList '/quiet' -Wait",
-            "Remove-Item $dir\\in.msi"
+            "Start-Process $dir\\install.exe -ArgumentList '--silent' -Wait",
+            "Remove-Item $dir\\install.exe"
         ]
     },
     "post_install": [
@@ -48,6 +47,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.wuyanzheshui.workers.dev/microsoft/PowerToys/releases/download/v$version/PowerToysSetup-$version-x64.msi#/in"
+        "url": "https://github.wuyanzheshui.workers.dev/microsoft/PowerToys/releases/download/v$version/PowerToysSetup-$version-x64.exe#/install.exe"
     }
 }
