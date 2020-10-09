@@ -62,6 +62,7 @@ or
 | [PanDownload卢本伟修改版 **(WXQQ_RevokeMsgPatcher)**](./bucket/WXQQ_RevokeMsgPatcher.json)                                   |   ✔️🔶   |    ✔️     |       ✔️(⛔️)        |    ❌     |
 | [微信QQ防撤回补丁 **(WXQQ_RevokeMsgPatcher)**](./bucket/WXQQ_RevokeMsgPatcher.json)                                          |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ScreenRuler **(ScreenRuler)**](./bucket/ScreenRuler.json)                                                                   |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [Nat类型测试工具 **(NatTypeTester)**](./bucket/NatTypeTester.json)                                                           |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ **()**](./bucket/.json)                                                                                                    |        |          |                   |          |
 
 - ✔️ Yes
