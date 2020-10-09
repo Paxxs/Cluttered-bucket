@@ -53,7 +53,7 @@ GitHub repository configuration.
 
 - `workflows` folder
     - Linux (legacy) version [GitHub Actions](https://github.com/features/actions) configuration for automatic issue/PR/updates handling.
-    - Windows version of actions could be used for better and future proof implementation (see <https://github.com/Ash258/Scoop-GithubActions/tree/master-win> for updated configs)
+    - Windows version of actions could be used for better and future proof implementation (see <https://github.com/Ash258/Scoop-GithubActions/tree/main-win> for updated configs)
 - `CODEOWNERS`
     - Pull requests will request review for users defined in this file
 - `PULL REQUEST TEMPLATE`
@@ -96,10 +96,12 @@ GitHub repository configuration.
             - Only master branch is better, since you can freely test in other branches and do not mystificate users
             - [You could use alternative styles](https://shields.io/category/build#styles)
 1. Clone project into some folder
+    - `git clone git@github.com:USER/REPO.git MyAwesomeBucket`
+    - or
     - `git clone https://github.com/USER/REPO.git MyAwesomeBucket`
 1. Open vscode with this clone
     - `code MyAwesomeBucket`
-1. Configure remote repository
+1. _[optional]_ Configure remote repository
     1. `git remote add 'upstream' 'https://github.com/Ash258/GenericBucket.git'`
     - This step will allow you to synchronize changes with this template repository
     - If some changes are pushed into this repository and you want to reflect them into your bucket, you can simply do something like:
@@ -108,6 +110,7 @@ GitHub repository configuration.
         - Do changes
         - `git merge master` or create PR in github
 1. Create proper README.md
+    1. [Open this README in the browser for reference](https://github.com/Ash258/GenericBucket/tree/master/README.md)
     1. Open `README.template.md`
     1. Replace all `%%templatestring%%` with real and according values
         1. Replace appveyor status badge with yours
@@ -119,4 +122,4 @@ GitHub repository configuration.
     1. Actions
         1. Open each file in `.github\workflows` and change `youremail@email.com` with your email
         1. Visit <https://github.com/Ash258/Scoop-GithubActions> for more information
-1. 🎉🎉 Everything set. High Quality bucket is ready for new users 🎉🎉
+1. 🎉🎉 Everything set. High quality and automated bucket is ready for new users 🎉🎉
