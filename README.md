@@ -4,6 +4,15 @@
 
 In this repository you will find everything you need to know about creating custom bucket with appveyor support.
 
+- [Files and helpers](#files-and-helpers)
+    - [`bucket` Folder](#bucket-folder)
+    - [`bin` Folder](#bin-folder)
+    - [`Bucket.Tests.ps1` File](#buckettestsps1-file)
+    - [`.vscode` Folder](#vscode-folder)
+    - [`.github` Folder](#github-folder)
+    - [`config files`](#config-files)
+- [How to use and adopt this bucket](#how-to-use-and-adopt-this-bucket)
+
 ## Files and helpers
 
 ### `bucket` Folder
