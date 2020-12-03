@@ -1,9 +1,12 @@
 {
     "recommendations": [
+        "CoenraadS.bracket-pair-colorizer-2",
+        "DavidAnson.vscode-markdownlint",
         "EditorConfig.EditorConfig",
-        "ms-vscode.PowerShell",
         "fabiospampinato.vscode-terminals",
-        "usernamehw.errorlens",
+        "ms-vscode.powershell-preview",
         "redhat.vscode-yaml",
+        "usernamehw.errorlens",
+        "yzhang.markdown-all-in-one",
     ],
 }

@@ -18,7 +18,7 @@ In this repository you will find everything you need to know about creating cust
 ### `bucket` Folder
 
 - All manifests belong here
-- `.gitkeep` file could be removed after you push your first manifest
+- `.gitkeep` file could be removed when you push your first manifest
 
 ### `bin` Folder
 
@@ -53,7 +53,7 @@ Contains all syntax highlighting, code formating, manifest creating tools you co
             - Create only architecture property with 64bit and 32bit
         - `upAr`
             - Create autoupdate property with architecture
-        - `persistCheck`
+        - `persistCheck`, `persistInlineContent`, `persistInlineNoContent`
             - Installer / pre_install script for checking if file is already persisted or need to be created
 
 ### `.github` Folder
