@@ -86,18 +86,18 @@
             "singlebinary.exe",
             "withOtherName",
             "andSomeArguments"
+        ]
+    ],
+    "shortcuts": [ // Array Of Array Of Strings (similar to bin)
+        [
+            "file.exe",
+            "Shortcut Name"
         ],
         [
             "singlebinary.exe",
             "withOtherName",
             "", // Keep blank if none
             "withOtherIcon.ico"
-        ]
-    ],
-    "shortcuts": [ // String or Array Of Array Of Strings (similar to bin)
-        [
-            "",
-            ""
         ]
     ],
     "psmodule": {
@@ -123,7 +123,7 @@
     },
     "autoupdate": {
         "url": "https://ash258.com#/newName.zip",
-        "hash": { // Some vendors do not ship hashes 😭
+        "hash": { // Some vendors do not ship hashes
             "url": "https://ash258.com",
             "regex": "do not write regexes for hash algorithms, use variables ($md5, $sha1, $sha256, $sha512, $checksum)"
         },

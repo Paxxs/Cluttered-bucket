@@ -134,6 +134,9 @@
                 "showReuseMessage": false,
             },
             "problemMatcher": [],
+            "runOptions": {
+                "instanceLimit": 99,
+            },
         },
         {
             "label": "Checkhashes Actual",
@@ -160,6 +163,9 @@
                 "showReuseMessage": false,
             },
             "problemMatcher": [],
+            "runOptions": {
+                "instanceLimit": 99,
+            },
         },
         {
             "label": "Purge Uninstall Actual",
@@ -184,6 +190,9 @@
                 "showReuseMessage": false,
             },
             "problemMatcher": [],
+            "runOptions": {
+                "instanceLimit": 99,
+            },
         },
         {
             "label": "Install Actual",
@@ -207,6 +216,9 @@
                 "showReuseMessage": false,
             },
             "problemMatcher": [],
+            "runOptions": {
+                "instanceLimit": 99,
+            },
         },
         {
             "label": "ReInstall Actual",
@@ -230,6 +242,9 @@
                 "showReuseMessage": false,
             },
             "problemMatcher": [],
+            "runOptions": {
+                "instanceLimit": 99,
+            },
         },
         {
             "label": "Force Update Actual",
@@ -246,10 +261,11 @@
                 "'${fileBasenameNoExtension}'",
                 "-f",
             ],
+            "problemMatcher": [],
             "runOptions": {
+                "instanceLimit": 99,
                 "reevaluateOnRerun": false,
             },
-            "problemMatcher": [],
         },
     ],
     "inputs": [
