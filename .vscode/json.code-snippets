@@ -110,4 +110,49 @@
         "scope": "json,jsonc",
         "body": "\"if (! (Test-Path \\\"\\$persist_dir\\\\\\\\$1\\\")) { New-Item \\\"\\$dir\\\\\\\\$1\\\" | Out-Null }\",",
     },
+    "Check for existing persist files": {
+        "prefix": "persistChecks",
+        "scope": "json,jsonc",
+        "body": [
+            "\"function CreateFile([String] \\$file, [String] \\$content = \\$null) {\",",
+            "\"    if (!(Test-Path \\\"\\$persist_dir\\\\\\\\\\$file\\\")) {\",",
+            "\"        Write-Host 'File' \\$file 'does not exists. Creating.' -f Yellow\",",
+            "\"        New-Item -Force -Path \\\"\\$persist_dir\\\\\\\\\\$file\\\" -ItemType file -Value \\$content | Out-Null\",",
+            "\"    }\",",
+            "\"}\",",
+            "\"CreateFile -Path '$1' -Value '$2'\"",
+        ],
+    },
+    "Check for existing persist dir": {
+        "prefix": "persistdirCheck",
+        "scope": "json,jsonc",
+        "body": [
+            "\"\\$file = '$1'\",",
+            "\"if (!(Test-Path \\\"\\$persist_dir\\\\\\\\\\$file\\\")) {\",",
+            "\"    Write-Host 'File' \\$file 'does not exists. Creating.' -f Yellow\",",
+            "\"    New-Item -Path \\$dir\\\\\\\\\\$file -ItemType Directory | Out-Null\",",
+            "\"}\"",
+        ],
+    },
+    "make junction persist dir to appdata": {
+        "prefix": "jun2appdata",
+        "scope": "json,jsonc",
+        "body": [
+            "\"New-Item -Path \\\"\\$env:APPDATA\\\\\\file\\\" -ItemType Junction -Value \\\"\\$dir\\\\\\file\\\"\"",
+        ],
+    },
+    "Check for existing persist dirs": {
+        "prefix": "persistdirChecks",
+        "scope": "json,jsonc",
+        "body": [
+            "\"function CreateDirectory {\",",
+            "\"    param ([string]\\$file)\",",
+            "\"    if (!(Test-Path \\\"\\$persist_dir\\\\\\\\\\$file\\\")) {\",",
+            "\"        Write-Host 'File' \\$file 'does not exists. Creating.' -f Yellow\",",
+            "\"        New-Item -Path \\$dir\\\\\\\\\\$file -ItemType Directory -Force | Out-Null\",",
+            "\"    }\",",
+            "\"}\",",
+            "\"CreateDirectory '$1'\"",
+        ]
+    }
 }

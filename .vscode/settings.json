@@ -54,4 +54,7 @@
             ".github/workflows/*",
         ],
     },
+    "cSpell.words": [
+        "Coolapk"
+    ],
 }
