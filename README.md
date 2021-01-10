@@ -63,7 +63,8 @@ or
 | [微信QQ防撤回补丁 **(WXQQ_RevokeMsgPatcher)**](./bucket/WXQQ_RevokeMsgPatcher.json)                                          |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ScreenRuler **(ScreenRuler)**](./bucket/ScreenRuler.json)                                                                   |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [Nat类型测试工具 **(NatTypeTester)**](./bucket/NatTypeTester.json)                                                           |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
-| [ **()**](./bucket/.json)                                                                                                    |        |          |                   |          |
+| [Everything搜索栏 **(UAC.EverythingToolbar)**](./bucket/UAC.EverythingToolbar.json)                                          |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [oh-my-posh3 **(oh-my-posh-and-wsl)**](./bucket/oh-my-posh-and-wsl.json)                                                     |   ✔️    |    ✔️     |       ✔️(✔️)        |    ✔️     |
 
 - ✔️ Yes
 - ❌ No
