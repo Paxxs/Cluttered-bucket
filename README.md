@@ -65,6 +65,8 @@ or
 | [Nat类型测试工具 **(NatTypeTester)**](./bucket/NatTypeTester.json)                                                           |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [Everything搜索栏 **(UAC.EverythingToolbar)**](./bucket/UAC.EverythingToolbar.json)                                          |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [oh-my-posh3 **(oh-my-posh-and-wsl)**](./bucket/oh-my-posh-and-wsl.json)                                                     |   ✔️    |    ✔️     |       ✔️(✔️)        |    ✔️     |
+| [测试 Cloudflare CDN 延迟和速度工具 **(CloudflareSpeedTest)**](./bucket/CloudflareSpeedTest.json)                            |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [ **()**](./bucket/.json)                                                                                                    |   ✔️    |    ✔️     |       ✔️(✔️)        |    ✔️     |
 
 - ✔️ Yes
 - ❌ No
