@@ -1,5 +1,5 @@
 {
-    "version": "0.3.1",
+    "version": "0.3.2",
     "description": "高颜值的第三方网易云播放器",
     "homepage": "https://github.com/qier222/YesPlayMusic",
     "license": {
@@ -14,7 +14,7 @@
         ]
     ],
     "uninstaller": {
-        "script":["Remove-Item -Path $env:APPDATA\\YesPlayMusic -Recurse"]
+        "script": "Remove-Item -Path $env:APPDATA\\YesPlayMusic -Recurse"
     },
     "checkver": "github",
     "autoupdate": {
