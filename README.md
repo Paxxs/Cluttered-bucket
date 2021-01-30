@@ -67,6 +67,7 @@ or
 | [oh-my-posh3 **(oh-my-posh-and-wsl)**](./bucket/oh-my-posh-and-wsl.json)                                                     |   ✔️    |    ✔️     |       ✔️(✔️)        |    ✔️     |
 | [测试 Cloudflare CDN 延迟和速度工具 **(CloudflareSpeedTest)**](./bucket/CloudflareSpeedTest.json)                            |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [高颜值Vue网易云在线播放器 **(YesPlayMusic)**](./bucket/YesPlayMusic.json)                                                                |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [Windows新特性控制器 **(ViveTool)**](./bucket/ViveTool.json)                                                                                                    |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ **()**](./bucket/.json)                                                                                                    |   ✔️    |    ✔️     |       ✔️(✔️)        |    ✔️     |
 
 - ✔️ Yes
