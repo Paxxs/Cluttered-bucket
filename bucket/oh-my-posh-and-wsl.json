@@ -13,8 +13,8 @@
         }
     },
     "bin": [
-        "oh-my-posh-wsl",
-        "oh-my-posh.exe"
+        "bin/oh-my-posh-wsl",
+        "bin/oh-my-posh.exe"
     ],
     "checkver": {
         "github": "https://github.com/JanDeDobbeleer/oh-my-posh3"
