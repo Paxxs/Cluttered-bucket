@@ -1,43 +1,39 @@
 {
-    "version": "6.32",
-    "description": "AIDA64 is a system information, diagnostics, and auditing application.",
-    "homepage": "https://www.aida64.com",
+    "version": "6.32.5600",
+    "description": "Aida64 Extreme Edition. System information tool with extremely detailed information about hardware and benchmarks to measure the performance of the computer",
+    "homepage": "https://www.aida64.com/products/aida64-extreme",
     "license": {
-        "identifier": "Shareware",
+        "identifier": "Proprietary",
         "url": "https://www.aida64.com/licensing"
     },
-    "url": "http://download.aida64.com/aida64extreme632.zip",
-    "hash": "71b232281776ccbe527030a5a590f55ba8e9876632782012c2b71c99450163d1",
-    "installer": {
-        "script": [
-            "$FILE = 'aida64.ini'",
-            "if (!(Test-Path \"$persist_dir\\$FILE\")) {",
-            "    Write-Host 'No' $FILE 'exists. Creating.' -f Yellow",
-            "    $CONT = @('[Generic]', '', 'NoRegistry=1', 'NetUpdateFreq=0')",
-            "    Set-Content \"$dir\\$FILE\" ($CONT -join \"`r`n\") -Encoding Ascii",
-            "}",
-            "$FILE = 'pkey.txt'",
-            "if (!(Test-Path \"$persist_dir\\$FILE\")) {",
-            "    Write-Host 'No' $FILE 'exists. Creating.' -f Yellow",
-            "    New-Item \"$dir\\$FILE\" -Type File",
-            "}"
-        ]
-    },
-    "persist": [
-        "pkey.txt",
-        "aida64.ini"
+    "url": [
+        "http://download.aida64.com/aida64extreme632.zip",
+        "https://gist.githubusercontent.com/Paxxs/d000313f20f0f43631386dac8ead4ca0/raw/26b96c1f6a9109f28c2510b138a7cbf2ed63d4c5/pkey.txt"
     ],
+    "hash": [
+        "71b232281776ccbe527030a5a590f55ba8e9876632782012c2b71c99450163d1",
+        "sha1:2fe5a9b9d22699acd86e40d9778a6b09bc547d6c"
+    ],
+    "pre_install": [
+        "try { Get-Command 'Test-Persistence' -ErrorAction 'Stop' | Out-Null } catch { error 'Shovel flavour of scoop is required'; exit 258 }",
+        "Test-Persistence 'aida64.ini' '[Generic]', '', 'NoRegistry=1', 'NetUpdateFreq=0'"
+    ],
+    "bin": "aida64.exe",
     "shortcuts": [
         [
             "aida64.exe",
-            "AIDA64"
+            "Aida64 Extreme Edition"
         ]
     ],
+    "persist": [
+        "aida64.ini",
+        "pkey.txt"
+    ],
     "checkver": {
-        "url": "https://www.techpowerup.com/download/aida64-extreme/",
-        "regex": "AIDA64 Extreme v([\\d.]*)"
+        "url": "https://www.aida64.com/downloads/latesta64xe",
+        "regex": "Version: ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "http://download.aida64.com/aida64extreme$cleanVersion.zip"
+        "url": "http://download.aida64.com/aida64extreme$majorVersion$minorVersion.zip"
     }
 }
