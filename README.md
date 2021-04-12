@@ -1,10 +1,15 @@
 # Cluttered-bucket Bucket [![Build status](https://ci.appveyor.com/api/projects/status/r1swkc1x7whqn278?svg=true)](https://ci.appveyor.com/project/Paxxs/cluttered-bucket) ![Excavator](https://github.com/Paxxs/Cluttered-bucket/workflows/Excavator/badge.svg)
 
-`xxx bucket add MorFans-apt 'https://github.com/Paxxs/Cluttered-bucket.git'`
+```
+# 安装 Scoop-Core
+scoop install 7zip git
+scoop config SCOOP_REPO 'https://github.com/Ash258/Scoop-Core'
+scoop update
+scoop checkup
 
-or
-
-`xxx bucket add MorFans-apt 'https://github.com.cnpmjs.org/Paxxs/Cluttered-bucket.git'`
+# 添加 repo
+scoop bucket add MorFans-apt 'https://github.com/Paxxs/Cluttered-bucket.git'
+```
 
 ## Manifests
 
