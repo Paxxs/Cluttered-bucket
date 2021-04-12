@@ -1,22 +1,25 @@
 {
-    "version": "6.33.5700",
-    "description": "Aida64 Extreme Edition. Industry-leading system information tool, loved by PC enthusiasts around the world, which provides extremely detailed information about hardware and offers benchmarks to measure the performance of the computer.",
-    "homepage": "https://www.aida64.com/products/aida64-extreme/",
-    "url": [
-        "http://download.aida64.com/aida64extreme633.zip",
-        "https://gist.githubusercontent.com/Paxxs/d000313f20f0f43631386dac8ead4ca0/raw/26b96c1f6a9109f28c2510b138a7cbf2ed63d4c5/pkey.txt"
-    ],
-    "hash": [
-        "2468ae1b4212a5b28f504b7a1c082875cbabfd5663adc639b28c33d26972ac78",
-        "sha1:2fe5a9b9d22699acd86e40d9778a6b09bc547d6c"
-    ],
+    "version": "6.32",
+    "description": "AIDA64 is a system information, diagnostics, and auditing application.",
+    "homepage": "https://www.aida64.com",
+    "license": {
+        "identifier": "Shareware",
+        "url": "https://www.aida64.com/licensing"
+    },
+    "url": "http://download.aida64.com/aida64extreme632.zip",
+    "hash": "71b232281776ccbe527030a5a590f55ba8e9876632782012c2b71c99450163d1",
     "installer": {
         "script": [
             "$FILE = 'aida64.ini'",
-            "if (-not (Test-Path \"$persist_dir\\$FILE\")) {",
+            "if (!(Test-Path \"$persist_dir\\$FILE\")) {",
             "    Write-Host 'No' $FILE 'exists. Creating.' -f Yellow",
             "    $CONT = @('[Generic]', '', 'NoRegistry=1', 'NetUpdateFreq=0')",
             "    Set-Content \"$dir\\$FILE\" ($CONT -join \"`r`n\") -Encoding Ascii",
+            "}",
+            "$FILE = 'pkey.txt'",
+            "if (!(Test-Path \"$persist_dir\\$FILE\")) {",
+            "    Write-Host 'No' $FILE 'exists. Creating.' -f Yellow",
+            "    New-Item \"$dir\\$FILE\" -Type File",
             "}"
         ]
     },
@@ -27,14 +30,14 @@
     "shortcuts": [
         [
             "aida64.exe",
-            "Aida64 Extreme"
+            "AIDA64"
         ]
     ],
     "checkver": {
-        "url": "https://www.aida64.com/downloads/latesta64xe/",
-        "regex": "Version: ([\\d\\.]+)"
+        "url": "https://www.techpowerup.com/download/aida64-extreme/",
+        "regex": "AIDA64 Extreme v([\\d.]*)"
     },
     "autoupdate": {
-        "url": "http://download.aida64.com/aida64extreme$majorVersion$minorVersion.zip"
+        "url": "http://download.aida64.com/aida64extreme$cleanVersion.zip"
     }
 }
