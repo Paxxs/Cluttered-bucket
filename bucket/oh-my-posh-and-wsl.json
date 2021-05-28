@@ -1,5 +1,5 @@
 {
-    "version": "3.158.1",
+    "version": "3.158.3",
     "description": "A prompt theme engine for any shell",
     "homepage": "https://ohmyposh.dev",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.xiu2.xyz/https://github.com/JanDeDobbeleer/oh-my-posh3/releases/download/v3.158.1/posh-windows-wsl-amd64.7z",
-            "hash": "cfe841076bdeb2aedffb0b8081b9f5590afff01eb445cc0fb67c494286db1446"
+            "url": "https://github.xiu2.xyz/https://github.com/JanDeDobbeleer/oh-my-posh3/releases/download/v3.158.3/posh-windows-wsl-amd64.7z",
+            "hash": "47284b5e04d2ff15f76d956736bdbf405d3ec5acae233694e04e80cf4baff6df"
         }
     },
     "bin": [
