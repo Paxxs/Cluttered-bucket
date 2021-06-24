@@ -5,7 +5,7 @@
     "license": {
         "identifier": "MIT"
     },
-    "url": "https://gh.con.sh/https://github.com/qier222/YesPlayMusic/releases/download/v0.3.6/YesPlayMusic-0.3.6.exe#/YesPlayMusic.exe",
+    "url": "https://download.fastgit.org/qier222/YesPlayMusic/releases/download/v0.3.6/YesPlayMusic-0.3.6.exe#/YesPlayMusic.exe",
     "hash": "9791451663826deed63d28e8a01411ef4a2f44ef50ae564bd9c6796a41eadab6",
     "shortcuts": [
         [
@@ -18,6 +18,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://gh.con.sh/https://github.com/qier222/YesPlayMusic/releases/download/v$version/YesPlayMusic-$version.exe#/YesPlayMusic.exe"
+        "url": "https://download.fastgit.org/qier222/YesPlayMusic/releases/download/v$version/YesPlayMusic-$version.exe#/YesPlayMusic.exe"
     }
 }
