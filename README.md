@@ -49,7 +49,7 @@ scoop bucket add MorFans-apt 'https://github.com/Paxxs/Cluttered-bucket.git'
 | [IDA-Pro **(IDA-Pro.64)**](./bucket/IDA-Pro.64.json)                                                                         |   🎉✔️   |    ✔️     |       ❌ (❌)       |    ❌     |
 | [万兴PDFelement **(PDFelement)**](./bucket/PDFelement.json)                                                                  |  🎉🔶🎃   |    ✔️     |       ❌ (❌)       |    ❌     |
 | [网易云音乐 **(CloudMusic)**](./bucket/CloudMusic.json)                                                                      |   🎉✔️   |    ✔️     |       ❌ (❌)       |    ❌     |
-| [HashTab **(UAC.hashTab)**](./bucket/UAC.hashTab.json)                                                                       |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [HashTab **(UAC.HashTab)**](./bucket/UAC.HashTab.json)                                                                       |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [PotPlayer Mini **(potplayer-mini.64)**](./bucket/potplayer-mini.64.json)                                                    |   ✔️    |    ✔️     |       ❌ (❌)       |    ✔️     |
 | [Filezilla-优化持久化版^deprecated:停止维护^ **(deprecated.Filezilla-persist)**](./bucket/deprecated.Filezilla-persist.json) |   ✔️    |    ❌     |       ❌(❌)        |    ✔️     |
 | [雷电安卓模拟器en^deprecated:停止维护^ **(deprecated.LDPlayer.clear)**](./bucket/deprecated.LDPlayer.clear.json)             |   🎉🔶   |    ❌     |       ❌(❌)        |    ✔️     |
