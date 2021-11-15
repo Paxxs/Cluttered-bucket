@@ -73,6 +73,7 @@ scoop bucket add MorFans-apt 'https://github.com/Paxxs/Cluttered-bucket.git'
 | [测试 Cloudflare CDN 延迟和速度工具 **(CloudflareSpeedTest)**](./bucket/CloudflareSpeedTest.json)                            |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [高颜值Vue网易云在线播放器 **(YesPlayMusic)**](./bucket/YesPlayMusic.json)                                                                |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [Windows新特性控制器 **(ViveTool)**](./bucket/ViveTool.json)                                                                                                    |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
+| [任务栏小猫猫 **(RunCat)**](./bucket/RunCat.json)                                                                                                    |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [ **()**](./bucket/.json)                                                                                                    |   ✔️    |    ✔️     |       ✔️(✔️)        |    ✔️     |
 
 - ✔️ Yes
