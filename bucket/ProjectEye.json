@@ -6,7 +6,7 @@
         "identifier": "MIT"
     },
     "notes": "Runtime:.NET Framework 4.5+",
-    "url": "https://download.fastgit.org/Planshit/ProjectEye/releases/download/1.4.1/ProjectEye.zip",
+    "url": "https://github.com/Planshit/ProjectEye/releases/download/1.4.1/ProjectEye.zip",
     "hash": "f1787be1fa8fa6c967b427186da6d0c55938dede3023e470de32e2d422bc22d6",
     "bin": "ProjectEye.exe",
     "shortcuts": [
@@ -27,6 +27,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://download.fastgit.org/Planshit/ProjectEye/releases/download/$version/ProjectEye.zip"
+        "url": "https://github.com/Planshit/ProjectEye/releases/download/$version/ProjectEye.zip"
     }
 }

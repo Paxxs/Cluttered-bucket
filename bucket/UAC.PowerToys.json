@@ -7,7 +7,7 @@
     },
     "notes": "",
     "depends": "dotnet-desktop-runtime",
-    "url": "https://download.fastgit.org/microsoft/PowerToys/releases/download/v0.49.1/PowerToysSetup-0.49.1-x64.exe#/install.exe",
+    "url": "https://github.com/microsoft/PowerToys/releases/download/v0.49.1/PowerToysSetup-0.49.1-x64.exe#/install.exe",
     "hash": "31962e9947318f00086269b903e3b53b4613c9e9abe32a71d1128e3437222b2c",
     "installer": {
         "script": [
@@ -47,6 +47,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://download.fastgit.org/microsoft/PowerToys/releases/download/v$version/PowerToysSetup-$version-x64.exe#/install.exe"
+        "url": "https://github.com/microsoft/PowerToys/releases/download/v$version/PowerToysSetup-$version-x64.exe#/install.exe"
     }
 }
