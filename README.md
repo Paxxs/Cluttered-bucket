@@ -61,7 +61,7 @@ scoop bucket add MorFans-apt 'https://github.com/Paxxs/Cluttered-bucket.git'
 | [ PowerToys **(UAC.PowerToys)**](./bucket/UAC.PowerToys.json)                                                                |   ✔️🎃   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [中国软件拦截器 **(Malware-Patch)**](./bucket/Malware-Patch.json)                                                            |   ✔️    |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [酷安PC版 **(Flutter-Coolapk)**](./bucket/Flutter-Coolapk.json)                                                              |   ✔️    |    ✔️     |       ❌ (❌)       |    ✔️     |
-| [远程app管理工具 **(RemoteApp-Tool)**](./bucket/RemoteApp-Tool.json)                                                         |   ✔️    |    ✔️     |       ❌ (❌)       |    ✔️     |
+| [远程app管理工具 **(RemoteApp-Tool)**](./bucket/RemoteApp-Tool.json)                                                         |   ✔️    |    ✔️     |       ✔️(⛔️)       |    ✔️     |
 | [RDP Wrapper **(UAC.RDP-Wrapper)**](./bucket/UAC.RDP-Wrapper.json)                                                           |   ✔️✋   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [RDP Wrapper 自动更新配置版 **(UAC.RDP-Wrapper-AutoUpdate)**](./bucket/UAC.RDP-Wrapper-AutoUpdate.json)                      |  🎉✋🛠   |    ✔️     |       ✔️(⛔️)        |    ✔️     |
 | [PanDownload卢本伟修改版 **(WXQQ_RevokeMsgPatcher)**](./bucket/WXQQ_RevokeMsgPatcher.json)                                   |   ✔️🔶   |    ✔️     |       ✔️(⛔️)        |    ❌     |
