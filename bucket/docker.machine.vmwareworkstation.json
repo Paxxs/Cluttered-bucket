@@ -1,5 +1,5 @@
 {
-    "version": "1.0.10",
+    "version": "1.1.0",
     "description": "This plugin for Docker Machine creates Docker hosts locally on a VMware Workstation.",
     "homepage": "https://github.com/pecigonzalo/docker-machine-vmwareworkstation",
     "license": "Apache-2.0",
@@ -10,8 +10,8 @@
         "'docker-machine create --driver=vmwareworkstation dev'"
     ],
     "depends": "main/docker",
-    "url": "https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/download/v1.0.10/docker-machine-driver-vmwareworkstation.exe",
-    "hash": "f03010f6f3e35c92f259d9e59a3c3c163e036244f659b5541249630bcf7fc94d",
+    "url": "https://github.com/pecigonzalo/docker-machine-vmwareworkstation/releases/download/v1.1.0/docker-machine-driver-vmwareworkstation.exe",
+    "hash": "464f7a2d1ef9860721e3e66b90e77d2f1403dc88e259e7be7080db1f8b2c1e1a",
     "bin": "docker-machine-driver-vmwareworkstation.exe",
     "checkver": "github",
     "autoupdate": {
