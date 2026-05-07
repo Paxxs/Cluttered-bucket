@@ -1,9 +1,9 @@
 {
-    "version": "5",
+    "version": "62",
     "description": "Calculate and display hash values from over two dozen popular hashing algorithms like MD5, SHA1, SHA2, RipeMD, HAVAL and Whirlpool.",
     "homepage": "http://implbits.com/products/hashtab/",
-    "url": "http://implbits.com/products/hashtab/HashTab_v5_Setup.exe#/cosi.7z",
-    "hash": "3e01c16048aac24ad6283ddfd1b5dd0285b6027ca0d38d45740462cb4e966ab9",
+    "url": "http://implbits.com/products/hashtab/HashTab_v62_Setup.exe#/cosi.7z",
+    "hash": "871bc70e2b39369561f51be9859d4a077a48b090482338732912fc7b792e5fc8",
     "installer": {
         "script": [
             "If (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] \"Administrator\")){",
